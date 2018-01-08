@@ -5,6 +5,18 @@
 	position: relative
 	padding: 0
 	overflow: hidden
+	z-index: 40
+	&:before
+		content: ""
+		background: url("../img/general/bg-topballs.png") no-repeat center
+		background-size: cover
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		z-index: 50
+		height: 501px
+
 	&_1
 		position: absolute
 		right: 5%
@@ -90,7 +102,6 @@
 .travelling
 	+flexBlockRow
 	align-items: flex-start
-	//margin-bottom: 100px
 	&__img
 		margin-bottom: 20px
 	&__item

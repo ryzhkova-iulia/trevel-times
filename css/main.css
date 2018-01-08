@@ -1408,7 +1408,18 @@ header {
   height: 525px;
   position: relative;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 40; }
+  .bg-top:before {
+    content: "";
+    background: url("../img/general/bg-topballs.png") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 50;
+    height: 501px; }
   .bg-top_1 {
     position: absolute;
     right: 5%;
