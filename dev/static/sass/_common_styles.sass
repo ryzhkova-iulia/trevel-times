@@ -1,0 +1,74 @@
+.container
+	&:before, &:after
+		display: none
+
+
+.container_flex
+	+flexBlockRow
+	justify-content: space-between
+
+.btn
+	background-color: $lightBlue
+	color: #FFFFFF
+	font-size: 1rem
+	font-weight: 900
+	padding: 0 1.5em
+	line-height: 2.6em
+	border: none
+	border-radius: 20.5px
+	cursor: pointer
+	&:hover
+		background-color: lighten($lightBlue, 20%)
+	&_white
+		border-radius: 16px
+		background-color: #ffffff
+		text-transform: uppercase
+		color: #000
+		+font-size(13px)
+
+.level-0
+	position: fixed
+	width: 100%
+	left: 0
+	top: 0
+	z-index: 99
+	padding: 15px 0
+	background-color: #FFFFFF
+
+.section-title
+	+font-size(30px)
+	font-weight: 900
+	text-align: center
+	width: 100%
+	margin-bottom: 50px
+	line-height: 1.1
+	&_white
+		color: #FFFFFF
+	span
+		+font-size(18px)
+		margin-top: 10px
+		display: block
+	&_margin-min
+		margin-bottom: 15px
+.section-text
+	text-align: center
+	width: 100%
+	max-width: 975px
+	color: #28313e
+	margin: auto
+	+font-size(14px)
+	p
+		margin-bottom: 5px
+
+.callback
+	+flexBlockRow
+	justify-content: center
+
+.bg-white
+	background: #f5f7fa url("../img/general/bg-w1.png") no-repeat center
+	background-size: cover
+	padding: 100px 0
+	padding-bottom: 237px
+.bg-gray
+	background-color: #f5f7fa
+	//padding-top: 0

@@ -1,0 +1,59 @@
+.footer-top
+	background-color: $footerTopColor
+	padding: 20px 0
+	.tel
+		a
+			color: #FFFFFF
+			&:before
+				content: "\f095 "
+				margin-right: 5px
+				font: normal normal normal 17px/1 FontAwesome
+				display: inline-block
+				color: $lightBlue
+
+.mail
+	color: #FFFFFF
+	+font-size(16px)
+	&:before
+		content: "\f0e0"
+		font: normal normal normal 14px/1 FontAwesome
+		display: inline-block
+		color: $lightBlue
+.footer-main
+	background-color: #00293c
+	padding: 20px 0
+
+.copyright
+	+font-size(12px)
+	font-weight: normal
+	line-height: 1.42
+	color: #7aa3b6
+	width: 100%
+	max-width: 400px
+.map-list
+	+flexBlockColumn
+	align-items: flex-start
+	&__title
+		font-weight: 500
+		+font-size(12px)
+		color: #27c4ff
+		text-align: left
+		margin-bottom: 10px
+		line-height: normal
+	&__item
+		cursor: pointer
+		+font-size(12px)
+		font-weight: normal
+		line-height: 1.42
+		text-align: left
+		color: #7aa3b6
+
+.footer-main
+	.container_flex
+		align-items: flex-start
+
+.block-list
+	+flexBlockRow
+	align-items: flex-start
+	width: 100%
+	max-width: 60%

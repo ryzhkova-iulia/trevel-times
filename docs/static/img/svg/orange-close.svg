@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="60px" viewBox="0 0 120 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>orange-close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="orange-close">
+            <path d="M120,60 L0,60 C16.5685425,60 30,46.5685425 30,30 C30,13.4314575 43.4314575,0 60,0 C76.5685425,0 90,13.4314575 90,30 C90,46.5685425 103.431458,60 120,60 Z" id="Combined-Shape" fill="#F58220"></path>
+            <polygon id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero" points="48 20.8284271 50.8284271 18 60.0208153 27.1923882 69.2132034 18 72.0416306 20.8284271 62.8492424 30.0208153 72.0416306 39.2132034 69.2132034 42.0416306 60.0208153 32.8492424 50.8284271 42.0416306 48 39.2132034 57.1923882 30.0208153"></polygon>
+        </g>
+    </g>
+</svg>

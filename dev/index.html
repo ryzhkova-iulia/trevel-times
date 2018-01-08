@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main-old.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+    <title>Туристическая компания Travel Times: поиск туров по всем туроператорам, найти и заказать тур и путевки онлайн в Москве
+    </title>
+  </head>
+  <body>
+    <div class="fixed-adaptive-block">
+      <div class="logo"><img src="./static/img/svg/logo.svg" alt="trevel-time"></div>
+      <div class="buttons">
+        <div class="point"><a href="/contacts/"><img src="./static/img/svg/mini-placeholder.svg"></a></div>
+        <div class="sandwich"></div>
+        <div class="phone"><a href="tel:+74955850976"><img src="./static/img/svg/mini-phone.svg"></a></div>
+      </div>
+    </div>
+    <div class="sandwich-menue">
+      <ul>
+        <li><a href="/strany/">Страны</a></li>
+        <li><a href="/vidy-otdyha/">Виды отдыха</a></li>
+        <li><a href="/novosti/">Новости</a></li>
+        <li><a href="/about/">О компании</a></li>
+        <li><a href="/informaciya/">Информация</a></li>
+      </ul>
+    </div>
+    <div class="header">
+      <div class="level-0">
+        <div class="container container_flex"><a class="logo" href="#"><img src="./static/img/svg/logo.svg" alt="Travel Times - Турагенство"></a>
+          <div class="buy"><a class="buy-tour" href="#">Где купить тур?</a>
+            <div class="schedule">
+              <div class="schedule__item">Пн-Пт:<span>10:00-20:00</span></div>
+              <div class="schedule__item">Сб:<span>11:00-16:00</span></div>
+            </div>
+          </div>
+          <div class="social"><a class="social__item social__item_telegram" href="#"></a><a class="social__item social__item_fb" href="#"></a><a class="social__item social__item_vk" href="#"></a><a class="social__item social__item_insta" href="#"></a></div>
+          <div class="tel"><a href="tel:+74951519105">+7 (495) 151-91-05</a><span>Горячая линия для туристов</span></div>
+          <button class="btn get-callback">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="menu level-1">
+        <div class="container">
+          <div class="menu-block"><a class="menu__item" href="/strany/">Страны</a><a class="menu__item" href="/vidy-otdyha/">Виды отдыха</a><a class="menu__item" href="/novosti/">Новости</a><a class="menu__item" href="/about/">О компании</a><a class="menu__item" href="/informaciya/">Информация</a><a class="menu__item hot-tour" href="/hot-tour.html">горящие туры</a></div>
+          <div class="sandwich"></div>
+          <div class="dropdown-menu">
+            <div class="place">
+              <div class="row">
+                <div class="title">Поиск туров</div>
+                <ul class="dropdown-list">
+                  <li><a href="/strany/">Страны</a></li>
+                  <li><a href="/vidy-otdyha/">Виды отдыха</a></li>
+                  <li><a href="/poisk-tura-po-vsem-turoperatoram/">Помощь в подборе тура</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="title">О компании</div>
+                <ul>
+                  <li><a href="/partnery/">Партнерство</a></li>
+                  <li><a href="/otzyvy/vse-otzyvy/">Отзывы клиентов</a></li>
+                  <li><a href="/novosti/">Новости</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="title">Услуги</div>
+                <ul>
+                  <li><a href="/uslugi/arenda-vill/">Аренда вилл</a></li>
+                  <li><a href="/uslugi/zakaz-biletov/">Заказ билетов</a></li>
+                  <li><a href="/uslugi/vyezd-kurera/">Выезд курьера</a></li>
+                  <li><a href="/uslugi/vizy/">Визы</a></li>
+                  <li><a href="/uslugi/strahovanie/">Страхование</a></li>
+                  <li><a href="/uslugi/sertifikaty/">Сертификаты</a></li>
+                  <li><a href="/uslugi/tury-v-kredit2/">Туры в кредит</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="title">Информация</div>
+                <ul>
+                  <li><a href="/contacts/">Контакты</a></li>
+                  <li><a href="/tury1/">Гарантия лучшей цены</a></li>
+                  <li><a href="/informaciya/sposoby-oplaty/">Способы оплаты</a></li>
+                  <li><a href="/informaciya/bezvizovye-strany/">Безвизовые страны</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <section class="bg-top js-bg-top"><img class="bg-top_1" src="./static/img/svg/top-tree1.svg"><img class="bg-top_2" src="./static/img/svg/top-tree2.svg"><img class="bg-top_3" src="./static/img/svg/top-tree3.svg">
+        <div class="container flex-center">
+          <div class="block-serch">
+            <div class="section-title section-title_white">Поиск туров по всем туроператорам</div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-gray">
+        <div class="container flex-center">
+          <div class="block-serch">
+            <div class="section-title">Горящие туры</div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-gray">
+        <div class="container">
+          <div class="section-title">Путешествуйте с нами!</div>
+          <div class="travelling">
+            <div class="travelling__item">
+              <div class="travelling__item_first travelling__img"><img src="./static/img/svg/adv1.svg"></div>
+              <div class="travelling__title">Гарантия лучшей цены</div>
+              <div class="travelling__text">Мы сделаем лучшее предложение на выбранный вами тур</div>
+            </div>
+            <div class="travelling__item">
+              <div class="travelling__item_second travelling__img"><img class="travelling-icon money" src="./static/img/svg/money1.svg"><img class="travelling-icon telephone" src="./static/img/svg/phone.svg"><img class="travelling-icon card" src="./static/img/svg/card.svg"></div>
+              <div class="travelling__title">Удобные способы оплаты</div>
+              <div class="travelling__text">Для наших туристов всё самое удобное — оплата туров онлайн и офлайн</div>
+            </div>
+            <div class="travelling__item">
+              <div class="travelling__item_third travelling__img"><img src="./static/img/svg/money.svg"></div>
+              <div class="travelling__title">Рассрочка и кредит</div>
+              <div class="travelling__text">Первоначальный взнос от 30% <br>Срок рассрочки — 4 месяца <br>Переплата — 0%</div>
+            </div>
+            <div class="travelling__item">
+              <div class="travelling__item_fourth travelling__img"><img src="./static/img/svg/loop.svg">
+                <svg class="rect">
+                  <rect class="rect-1" x="0%" y="0%"></rect>
+                  <rect class="rect-2" x="25%" y="0%"></rect>
+                  <rect class="rect-3" x="50%" y="0%"></rect>
+                  <rect class="rect-4" x="75%" y="0%"></rect>
+                  <rect class="rect-5" x="0%" y="25%"></rect>
+                  <rect class="rect-6" x="25%" y="25%"></rect>
+                  <rect class="rect-7" x="50%" y="25%"></rect>
+                  <rect class="rect-8" x="75%" y="25%"></rect>
+                  <rect class="rect-9" x="0%" y="50%"></rect>
+                  <rect class="rect-10" x="25%" y="50%"></rect>
+                  <rect class="rect-11" x="75%" y="50%"></rect>
+                  <rect class="rect-12" x="50%" y="50%"></rect>
+                  <rect class="rect-13" x="0%" y="75%"></rect>
+                  <rect class="rect-14" x="25%" y="75%"></rect>
+                  <rect class="rect-15" x="50%" y="75%"></rect>
+                  <rect class="rect-16" x="75%" y="75%"></rect>
+                </svg>
+              </div>
+              <div class="travelling__title">Поиск по всем операторам</div>
+              <div class="travelling__text">Мы предоставляем вам самые выгодные туры на базе сразу от более чем 100 надежных операторов</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rest-block">
+        <div class="container">
+          <div class="section-title">Выбирайте отдых по душе!</div>
+          <div class="rest"><a class="rest__item rest__item-beach" href="#"><img class="tree1" src="./static/img/svg/tree.svg"><img class="tree2" src="./static/img/svg/tree2.svg">
+              <div class="rest__title">пляж</div>
+              <button class="btn btn_white">подробнее</button></a><a class="rest__item rest__item-cruise" href="#">
+              <div class="rest__title">круизы</div>
+              <button class="btn btn_white">подробнее</button></a><a class="rest__item rest__item-child" href="#">
+              <div class="rest__title">дети +</div>
+              <div class="rest__text">Прекрасная подборка туров для тех, кто собирается отдыхать с детьми.</div>
+              <button class="btn btn_white">подробнее</button></a><a class="rest__item rest__item-newyear" href="#"><img class="snow" src="./static/img/svg/snow.svg"><img class="toy1" src="./static/img/svg/toy.svg"><img class="toy2" src="./static/img/svg/toy.svg">
+              <div class="rest__title">новый год</div>
+              <button class="btn btn_white">подробнее</button></a><a class="rest__item rest__item-travell" href="#">
+              <div class="rest__title">культ поход</div>
+              <div class="rest__text">Экскурсии для тех, кто хочет не только отдохнуть, но и узнать много нового.</div>
+              <button class="btn btn_white">подробнее</button></a><a class="rest__item rest__item-exotic" href="#">
+              <div class="rest__title">EXOTIC</div>
+              <div class="rest__text">Экзотические страны (Куба, Бали, Таиланд и др.)</div>
+              <button class="btn btn_white">подробнее</button></a><a class="rest__item rest__item-mountain" href="#">
+              <div class="rest__title">в горы</div>
+              <button class="btn btn_white">подробнее</button></a><a class="rest__item rest__item-group" href="#">
+              <div class="rest__title">группы детей</div>
+              <div class="rest__text">Туры для школьников и студентов, экскурсии, интересная программа.</div>
+              <button class="btn btn_white">подробнее</button></a>
+            <div class="show-more-block">
+              <div class="show-more btn">Все варианты</div>
+            </div><a class="rest__item rest__item-group item-hide" href="#">
+              <div class="rest__title">группы детей</div>
+              <div class="rest__text">Туры для школьников и студентов, экскурсии, интересная программа.</div>
+              <button class="btn btn_white">подробнее</button></a><a class="rest__item rest__item-group item-hide" href="#">
+              <div class="rest__title">группы детей</div>
+              <div class="rest__text">Туры для школьников и студентов, экскурсии, интересная программа.</div>
+              <button class="btn btn_white">подробнее</button></a>
+          </div>
+        </div>
+      </section>
+      <section class="form-callback">
+        <div class="section-title section-title_white">Вам помочь?<span>Подберем для Вас лучший тур за несколько минут!</span></div>
+        <form class="callback">
+          <div class="callback__item">
+            <input type="text" placeholder="Как вас зовут?">
+          </div>
+          <div class="callback__item">
+            <input placeholder="Ваш номер телефона?">
+          </div>
+          <div class="callback__item">
+            <button class="btn" type="submit">отправить</button>
+          </div>
+        </form>
+        <div class="agreement">Согласен на обработку &nbsp;<a href="">персональных данных</a></div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="section-title section-title_margin-min">Страны</div>
+          <div class="tab-filter"><span class="tab-filter_active">по алфавиту &nbsp;</span><span>/</span><span>&nbsp; по популярности</span></div>
+          <ul class="coutry">
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Bkdfmcmwkmdc</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мекси</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексикаdvd</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексикаcc</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мекс</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексfvdика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексикаffdfd</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексиcvvка</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мекси</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+            <li style="background: url(./static/img/general/country.png) no-repeat left center;">Мексика</li>
+          </ul>
+        </div>
+      </section>
+      <section class="form-callback form-callback_blue">
+        <div class="section-title section-title_white">Хотите больше интересных предложений?<span>Подписывайтесь на нашу рассылку, чтобы получать больше выгодных предложений</span></div>
+        <form class="callback">
+          <div class="callback__item">
+            <input type="text" placeholder="Как вас зовут?">
+          </div>
+          <div class="callback__item">
+            <input placeholder="Ваш номер телефона?">
+          </div>
+          <div class="callback__item">
+            <button class="btn" type="submit">отправить</button>
+          </div>
+        </form>
+        <div class="agreement">Согласен на обработку &nbsp;<a href="">персональных данных</a></div>
+      </section>
+      <section class="bg-white">
+        <div class="container">
+          <div class="section-title">Наши новости</div>
+          <div class="news js-news">
+            <div class="news__item"><img class="arrow" src="./static/img/svg/arrow.svg">
+              <div class="news__img"><img src="./static/img/general/shutterstock-211416037.png"></div>
+              <div class="news__text-block">
+                <div class="news__title">Спецпредложения на туры в декабре</div>
+                <div class="news__text">Столь желанный пляжный отдых в декабре,</div>
+              </div>
+            </div>
+            <div class="news__item"><img class="arrow" src="./static/img/svg/arrow.svg">
+              <div class="news__img"><img src="./static/img/general/shutterstock-341116016.png"></div>
+              <div class="news__text-block">
+                <div class="news__title">Спецпредложения на туры в декабре</div>
+                <div class="news__text">Столь желанный пляжный отдых в декабре, когда за окном ничто не напоминает о лете, стоит.</div>
+              </div>
+            </div>
+            <div class="news__item"><img class="arrow" src="./static/img/svg/arrow.svg">
+              <div class="news__img"><img src="./static/img/general/shutterstock-398589580.png"></div>
+              <div class="news__text-block">
+                <div class="news__title">Спецпредложения на туры в декабре</div>
+                <div class="news__text">Столь желанный пляжный отдых в декабре, когда за окном ничто не напоминает о лете, стоит.</div>
+              </div>
+            </div>
+            <div class="news__item"><img class="arrow" src="./static/img/svg/arrow.svg">
+              <div class="news__img"><img src="./static/img/general/shutterstock-211416037.png"></div>
+              <div class="news__text-block">
+                <div class="news__title">Спецпредложения на туры в декабре</div>
+                <div class="news__text">Столь желанный пляжный отдых в декабре, когда за окном ничто не напоминает о лете, стоит.</div>
+              </div>
+            </div>
+            <div class="news__item"><img class="arrow" src="./static/img/svg/arrow.svg">
+              <div class="news__img"><img src="./static/img/general/shutterstock-341116016.png"></div>
+              <div class="news__text-block">
+                <div class="news__title">Спецпредложения на туры в декабре</div>
+                <div class="news__text">Столь желанный пляжный отдых в декабре, когда за окном ничто не напоминает о лете, стоит.</div>
+              </div>
+            </div>
+            <div class="news__item"><img class="arrow" src="./static/img/svg/arrow.svg">
+              <div class="news__img"><img src="./static/img/general/shutterstock-398589580.png"></div>
+              <div class="news__text-block">
+                <div class="news__title">Спецпредложения на туры в декабре</div>
+                <div class="news__text">Столь желанный пляжный отдых в декабре, когда за окном ничто не напоминает о лете, стоит.</div>
+              </div>
+            </div>
+          </div>
+          <div class="show-more-block">
+            <div class="show-more btn">Все варианты</div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-gray">
+        <div class="container">
+          <div class="section-title">Отзывы о нас</div>
+          <div class="comment js-comment">
+            <div class="comment__item"><img class="qiote" src="./static/img/svg/qiote.svg"><img class="comment__img" src="./static/img/general/bitmap.png">
+              <div class="comment__title">Хлеманенко Екатерина</div>
+              <div class="rating-block">
+                <fieldset class="rating">
+                  <input id="star5" type="radio" name="rating" value="5">
+                  <label class="full" for="star5" title="Awesome - 5 stars"></label>
+                  <input id="star4half" type="radio" name="rating" value="4 and a half">
+                  <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                  <input id="star4" type="radio" name="rating" value="4">
+                  <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                  <input id="star3half" type="radio" name="rating" value="3 and a half">
+                  <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                  <input id="star3" type="radio" name="rating" value="3">
+                  <label class="full" for="star3" title="Meh - 3 stars"></label>
+                  <input id="star2half" type="radio" name="rating" value="2 and a half">
+                  <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                  <input id="star2" type="radio" name="rating" value="2">
+                  <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                  <input id="star1half" type="radio" name="rating" value="1 and a half">
+                  <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                  <input id="star1" type="radio" name="rating" value="1">
+                  <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                  <input id="starhalf" type="radio" name="rating" value="half">
+                  <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+              </div>
+              <div class="comment__text">Когда пробуждение по утрам все больше напоминает реанимацию, а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях и интересных турах? Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Когда пробуждение по утрам все больше напоминает реанимацию!</div>
+            </div>
+            <div class="comment__item"><img class="qiote" src="./static/img/svg/qiote.svg"><img class="comment__img" src="./static/img/general/bitmap.png">
+              <div class="comment__title">Хлеманенко Екатерина</div>
+              <div class="rating-block">
+                <fieldset class="rating">
+                  <input id="star5" type="radio" name="rating" value="5">
+                  <label class="full" for="star5" title="Awesome - 5 stars"></label>
+                  <input id="star4half" type="radio" name="rating" value="4 and a half">
+                  <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                  <input id="star4" type="radio" name="rating" value="4">
+                  <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                  <input id="star3half" type="radio" name="rating" value="3 and a half">
+                  <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                  <input id="star3" type="radio" name="rating" value="3">
+                  <label class="full" for="star3" title="Meh - 3 stars"></label>
+                  <input id="star2half" type="radio" name="rating" value="2 and a half">
+                  <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                  <input id="star2" type="radio" name="rating" value="2">
+                  <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                  <input id="star1half" type="radio" name="rating" value="1 and a half">
+                  <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                  <input id="star1" type="radio" name="rating" value="1">
+                  <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                  <input id="starhalf" type="radio" name="rating" value="half">
+                  <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+              </div>
+              <div class="rating"></div>
+              <div class="comment__text">Когда пробуждение по утрам все больше напоминает реанимацию, а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях и интересных турах? Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Когда пробуждение по утрам все больше напоминает реанимацию!</div>
+            </div>
+            <div class="comment__item"><img class="qiote" src="./static/img/svg/qiote.svg"><img class="comment__img" src="./static/img/general/bitmap.png">
+              <div class="comment__title">Хлеманенко Екатерина</div>
+              <div class="rating-block">
+                <fieldset class="rating">
+                  <input id="star5" type="radio" name="rating" value="5">
+                  <label class="full" for="star5" title="Awesome - 5 stars"></label>
+                  <input id="star4half" type="radio" name="rating" value="4 and a half">
+                  <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                  <input id="star4" type="radio" name="rating" value="4">
+                  <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                  <input id="star3half" type="radio" name="rating" value="3 and a half">
+                  <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                  <input id="star3" type="radio" name="rating" value="3">
+                  <label class="full" for="star3" title="Meh - 3 stars"></label>
+                  <input id="star2half" type="radio" name="rating" value="2 and a half">
+                  <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                  <input id="star2" type="radio" name="rating" value="2">
+                  <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                  <input id="star1half" type="radio" name="rating" value="1 and a half">
+                  <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                  <input id="star1" type="radio" name="rating" value="1">
+                  <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                  <input id="starhalf" type="radio" name="rating" value="half">
+                  <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                </fieldset>
+              </div>
+              <div class="rating"></div>
+              <div class="comment__text">Когда пробуждение по утрам все больше напоминает реанимацию, а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях и интересных турах? Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Когда пробуждение по утрам все больше напоминает реанимацию!</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white-last">
+        <div class="container">
+          <div class="section-title">Туристическая компания Travel Times — <br>традиции хорошего отдыха!</div>
+          <div class="section-text">
+            <p>Travel Times — туристическая компания нового уровня. Мы постоянно развиваемся и расширяем спектр услуг. Опыт наших менеджеров поможет вам подобрать тур в любую точку мира, запланировать путешествие любой сложности.</p>
+            <p>Вы хотите посетить несколько стран и сэкономить на перелетах?</p>
+            <p>Мы проложим оптимальный по соотношению цена/качество маршрут.</p>
+            <p>Вы ищите горящие путевки?</p>
+            <p>На нашем сайте представлены лучшие предложения от ведущих туроператоров.</p>
+            <p>Travel Times — это в первую очередь удобный и выгодный сервис. Вы можете заказать звонок в подходящее вам время, и наши специалисты свяжутся с вами. А если вы цените свое время, то наш курьер будет в нужном месте со всеми необходимыми документами. Отличный сервис от опытнейших менеджеров, самые свежие продукты туристической индустрии, гибкие цены и широкий выбор путешествий — все это Travel Times!</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <div class="container container_flex"><a class="logo" href="#"><img src="./static/img/svg/logo.svg" alt="Travel Times - Турагенство"></a><a class="mail" href="mailto:info@travel-times.ru"> info@travel-times.ru</a>
+          <div class="social"><a class="social__item social__item_telegram" href="#"></a><a class="social__item social__item_fb" href="#"></a><a class="social__item social__item_vk" href="#"></a><a class="social__item social__item_insta" href="#"></a></div>
+          <div class="tel"><a href="tel:+74951519105">+7 (495) 151-91-05</a></div>
+          <button class="btn">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="container container_flex">
+          <div class="copyright">
+            © 2007-2017 Все права защищены. «Travel Times».
+            Участник Реестра Туристических Агентств №АН100330
+            Информация, представленная на сайте, не является публичной офертой.
+          </div>
+          <div class="block-list">
+            <div class="map-list">
+              <div class="map-list__title">Поиск туров</div><a class="map-list__item" href="#">Страны</a><a class="map-list__item" href="#">Виды отдыха</a><a class="map-list__item" href="#">Туры по месяцам</a>
+            </div>
+            <div class="map-list">
+              <div class="map-list__title">О компании</div><a class="map-list__item" href="#">Партнерство</a><a class="map-list__item" href="#">Отзывы клиентов</a><a class="map-list__item" href="#">Новости</a>
+            </div>
+            <div class="map-list">
+              <div class="map-list__title">Услуги</div><a class="map-list__item" href="#">Бронирование отелей</a><a class="map-list__item" href="#">Аренда вилл</a><a class="map-list__item" href="#">Заказ билетов</a><a class="map-list__item" href="#">Выезд курьера</a><a class="map-list__item" href="#">Визы</a><a class="map-list__item" href="#">Страхование</a><a class="map-list__item" href="#">Сертификаты</a><a class="map-list__item" href="#">Туры в кредит</a>
+            </div>
+            <div class="map-list">
+              <div class="map-list__title">Информация</div><a class="map-list__item" href="#">Контакты</a><a class="map-list__item" href="#">Гарантия лучшей цены</a><a class="map-list__item" href="#">Способы оплаты</a><a class="map-list__item" href="#">Безвизовые страны</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/jquery.fancybox.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="static/js/inputmask.min.js"></script>
+    <script src="static/js/jquery.inputmask.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/main-old.js"></script>
+  </body>
+</html>

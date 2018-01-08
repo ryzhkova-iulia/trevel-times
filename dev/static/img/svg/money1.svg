@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="67" height="75" viewBox="0 0 67 75">
+    <defs>
+        <linearGradient id="a" x1="-2.333%" x2="58.112%" y1="54.181%" y2="14.823%">
+            <stop offset="0%" stop-color="#00897C"/>
+            <stop offset="100%" stop-color="#079772"/>
+        </linearGradient>
+        <linearGradient id="b" x1="0%" x2="133.401%" y1="34.249%" y2="34.249%">
+            <stop offset="0%" stop-color="#00A890"/>
+            <stop offset="100%" stop-color="#00CE97"/>
+        </linearGradient>
+        <linearGradient id="c" x1="111.829%" x2="-4.724%" y1="63.317%" y2="36.188%">
+            <stop offset="0%" stop-color="#008F76"/>
+            <stop offset="100%" stop-color="#00FFBE"/>
+        </linearGradient>
+        <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#0FB289"/>
+            <stop offset="100%" stop-color="#00B686"/>
+        </linearGradient>
+        <linearGradient id="e" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#0CDAAA"/>
+            <stop offset="100%" stop-color="#00D8A4"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M0 21.465l46.974 41.118 18.932-21.465L18.93 0z"/>
+        <path fill="url(#b)" d="M56.642 36.555a5.254 5.254 0 0 0 .561 6.608l-9.92 11.296a5.248 5.248 0 0 0-6.38.422L8.538 26.432a5.253 5.253 0 0 0-.464-6.35L18 8.778a5.252 5.252 0 0 0 6.543-.439l32.099 28.215z"/>
+        <path fill="#079772" d="M39.392 37.373a8.865 8.865 0 0 1-12.515.81 8.874 8.874 0 0 1-.808-12.521 8.865 8.865 0 0 1 12.514-.809 8.874 8.874 0 0 1 .809 12.52"/>
+        <path fill="url(#c)" d="M.898 33.212l46.727 41.074 18.832-21.442L19.73 11.77z"/>
+        <path fill="url(#d)" d="M57.54 48.122l-32.1-28.216a5.252 5.252 0 0 1-6.542.44L8.97 31.646a5.253 5.253 0 0 1 .465 6.351l32.365 28.45a5.248 5.248 0 0 1 6.38-.423L58.1 54.73a5.254 5.254 0 0 1-.562-6.607"/>
+        <path fill="url(#e)" d="M40.29 48.94a8.865 8.865 0 0 1-12.515.808 8.874 8.874 0 0 1-.808-12.52 8.865 8.865 0 0 1 12.514-.808 8.874 8.874 0 0 1 .809 12.52"/>
+    </g>
+</svg>

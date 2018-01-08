@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="29" viewBox="0 0 48 29">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="6.967%" y1="-19.394%" y2="156.037%">
+            <stop offset="0%" stop-color="#FFAC05"/>
+            <stop offset="100%" stop-color="#FF8419"/>
+        </linearGradient>
+        <linearGradient id="b" x1="-10.384%" x2="130.656%" y1="262.794%" y2="100%">
+            <stop offset="0%" stop-color="#FFDC36"/>
+            <stop offset="100%" stop-color="#FFDD2F"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M45.863 28.798H2.043c-.672 0-1.223-.55-1.223-1.224V1.48C.82.806 1.37.255 2.044.255h43.819c.673 0 1.223.551 1.223 1.224v26.095c0 .673-.55 1.224-1.223 1.224"/>
+        <path fill="url(#b)" d="M.876 10.573h46.207V4.691H.876z"/>
+        <path fill="#FFF" d="M3.037 19.09H30.54v-5.785H3.037z"/>
+        <path fill="#FFD17B" d="M27.793 23.237H3.856c-.38 0-.69-.311-.69-.69 0-.38.31-.692.69-.692h23.937c.38 0 .69.311.69.691 0 .38-.31.69-.69.69M17.945 26.108H3.873a.709.709 0 0 1-.707-.707.71.71 0 0 1 .707-.707h14.072a.71.71 0 0 1 .707.707.709.709 0 0 1-.707.707"/>
+    </g>
+</svg>

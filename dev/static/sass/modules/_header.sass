@@ -1,0 +1,200 @@
+header
+	+flexBlockRow
+	background-color: #FFFFFF
+
+.header
+	position: relative
+	padding-top: 85px
+
+.social
+	&__item
+		width: 25px
+		height: 25px
+		margin: 0 3px
+		cursor: pointer
+	+flexBlockRow
+	justify-content: flex-start
+
+.social-block
+	+flexBlockRow
+	justify-content: flex-start
+	align-items: flex-start
+
+.social__item_telegram
+	background: url("../img/svg/telegram.svg") no-repeat center
+	background-size: cover
+.social__item_fb
+	background: url("../img/svg/facebook.svg") no-repeat center
+	background-size: cover
+.social__item_vk
+	background: url("../img/svg/vk.svg") no-repeat center
+	background-size: cover
+.social__item_insta
+	background: url("../img/svg/insta.svg") no-repeat center
+	background-size: cover
+
+
+.buy-tour
+	color: $mainBlue
+	+font-size(14px)
+	display: inline-block
+	line-height: 1
+	margin-left: 10px
+	border-bottom: 1px solid $mainBlue
+	padding-bottom: 3px
+
+.logo img
+	width: 183px
+
+
+.buy
+	+flexBlockColumn
+	align-items: flex-start
+	.buy-tour
+		margin-left: 0
+
+.schedule
+	+flexBlockRow
+	+font-size(12px)
+	font-weight: bold
+	flex-wrap: nowrap
+	&__item
+		color: $mainBlue
+		margin-right: 10px
+		&:last-of-type
+			margin-right: 0
+		span
+			color: #000
+
+.tel
+	+flexBlockColumn
+	font-size: 1rem
+	align-items: flex-end
+	a
+		color: #000000
+		font-weight: bold
+	span
+		line-height: 1
+		color: #6b7481
+		+font-size(13px)
+
+.menu
+	background-color: $lightGray
+	width: 100%
+	text-align: center
+	&__item
+		padding: 18px 0
+		+font-size(12px)
+		color: #46505d
+		text-transform: uppercase
+		font-weight: bold
+		margin: 0 20px
+		cursor: pointer
+	.container
+		height: auto
+		padding:  0
+	.container_flex
+		justify-content: center
+	.sandwich
+		float: right
+		padding: 17px
+	.place
+		text-align: left
+
+
+.menu-block
+	display: inline-block
+
+
+.hot-tour
+	color: $orange
+	&:before
+		vertical-align: middle
+		margin-right: 5px
+		content: ""
+		display: inline-block
+		background: url("../img/svg/hot-tour.svg")
+		width: 13px
+		height: 19px
+.sandwich
+	display: inline-block
+	vertical-align: top
+	padding: 18px
+	cursor: pointer
+	text-align: center
+	height: 60px
+	width: 60px
+	transition: opacity 0.6s
+	align-self: flex-end
+	&:after
+		content: ""
+		display: block
+		clear: both
+		background: url(../img/svg/expand.svg)
+		width: 30px
+		height: 24px
+		background-size: cover
+		display: inline-block
+		vertical-align: middle
+
+.fixed-adaptive-block .buttons .sandwich:after
+	content: ""
+	display: block
+	clear: both
+	background: url(../img/svg/menu-adapt.svg)
+	width: 120px
+	height: 60px
+	background-size: cover
+
+.fixed-adaptive-block .buttons .sandwich
+	padding: 0
+
+.fixed-adaptive-block .buttons .sandwich.open:after
+	background: url(../img/svg/orange-close.svg)
+	width: 120px
+	height: 60px
+	background-size: cover
+
+.sandwich-menue.open
+	padding-top: 0
+	height: 100vh
+
+.dropdown-list
+	list-style-type: disc
+	li
+		list-style-type: disc
+	a
+		font-weight: normal
+		font-size: 0.9rem
+
+		&:before
+			display: none
+			background: none
+			margin-right: 0
+
+.header .level-1 ul li
+	list-style: disc
+	color: $lightBlue
+
+.header .level-1 .dropdown-menu
+	z-index: 10
+
+.header .level-1 ul
+	padding-left: 15px
+
+.header .level-1 .dropdown-menu .place .row ul li a:before
+	display: none
+
+.header .level-1 .dropdown-menu .place .row .title
+	font-family: inherit
+
+.header .level-1 .container .sandwich.open
+	background: #00B0F2
+	opacity: 1
+
+.sandwich.open:after
+	background: url(../img/svg/close-white.svg)
+	width: 24px
+	height: 24px
+	content: ""
+	background-size: cover

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="75" viewBox="0 0 40 75">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#CEF2FF"/>
+            <stop offset="100%" stop-color="#9FE1FF"/>
+        </linearGradient>
+        <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#00ABF4"/>
+            <stop offset="100%" stop-color="#83EDFF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M36.063 74.198l-31.23.05a3.868 3.868 0 0 1-3.86-3.85L.864 4.055A3.868 3.868 0 0 1 4.715.19l31.229-.05a3.868 3.868 0 0 1 3.862 3.85l.107 66.344a3.868 3.868 0 0 1-3.85 3.863"/>
+        <path fill="#0081C7" d="M36.002 73.415l-31.121.05a3.172 3.172 0 0 1-3.168-3.158l-.106-66.17A3.173 3.173 0 0 1 4.764.97l31.12-.05a3.172 3.172 0 0 1 3.168 3.158l.106 66.17a3.172 3.172 0 0 1-3.156 3.168"/>
+        <rect width="34.9" height="70.22" x="3" y="2" fill="url(#b)" rx="2.5"/>
+        <path fill="#0081C7" d="M9.476 2h21.827l-.78 1.797A2 2 0 0 1 28.688 5h-16.46a2 2 0 0 1-1.784-1.094L9.476 2z"/>
+    </g>
+</svg>

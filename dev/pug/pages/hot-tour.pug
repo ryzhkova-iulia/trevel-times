@@ -1,0 +1,141 @@
+extends ../layout/main
+
+block title
+	| Туристическая компания Travel Times: поиск туров по всем туроператорам, найти и заказать тур и путевки онлайн в Москве
+
+block content
+	section.bg-top.js-bg-top.bg-top_orange
+		img(src="./static/img/svg/tree-or1.svg").bg-top_orange1
+		img(src="./static/img/svg/tree-or2.svg").bg-top_orange2
+		.container
+			ul.breadcrumbs
+				li(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+					a.breadcrumbs__link(href='/', title='Главная', itemprop='url')
+						| Главная
+				li
+					span.breadcrumb__current-page Виды отдыха
+
+		.container.flex-center
+			.block-serch
+				.section-title.section-title_white Горящие туры
+				.rest
+					a(href="#").rest__item.rest__item-beach
+						img(src="./static/img/svg/tree.svg").tree1
+						img(src="./static/img/svg/tree2.svg").tree2
+						.rest__title пляж
+						button.btn.btn_white подробнее
+					a(href="#").rest__item.rest__item-cruise
+						.rest__title круизы
+						button.btn.btn_white подробнее
+					a(href="#").rest__item.rest__item-child
+						.rest__title дети +
+						.rest__text Прекрасная подборка туров для тех, кто собирается отдыхать с детьми.
+						button.btn.btn_white подробнее
+					a(href="#").rest__item.rest__item-newyear
+						img(src="./static/img/svg/snow.svg").snow
+						img(src="./static/img/svg/toy.svg").toy1
+						img(src="./static/img/svg/toy.svg").toy2
+						.rest__title новый год
+						button.btn.btn_white подробнее
+					a(href="#").rest__item.rest__item-travell
+						.rest__title культ поход
+						.rest__text Экскурсии для тех, кто хочет не только отдохнуть, но и узнать много нового.
+						button.btn.btn_white подробнее
+					a(href="#").rest__item.rest__item-exotic
+						.rest__title EXOTIC
+						.rest__text Экзотические страны (Куба, Бали, Таиланд и др.)
+						button.btn.btn_white подробнее
+					a(href="#").rest__item.rest__item-mountain
+						.rest__title в горы
+						button.btn.btn_white подробнее
+					a(href="#").rest__item.rest__item-group
+						.rest__title группы детей
+						.rest__text Туры для школьников и студентов, экскурсии, интересная программа.
+						button.btn.btn_white подробнее
+					.show-more-block
+						.show-more.btn Все варианты
+
+					a(href="#").rest__item.rest__item-group.item-hide
+						.rest__title группы детей
+						.rest__text Туры для школьников и студентов, экскурсии, интересная программа.
+						button.btn.btn_white подробнее
+					a(href="#").rest__item.rest__item-group.item-hide
+						.rest__title группы детей
+						.rest__text Туры для школьников и студентов, экскурсии, интересная программа.
+						button.btn.btn_white подробнее
+
+
+	section.form-callback
+		.section-title.section-title_white Вам помочь?
+			span Подберем для Вас лучший тур за несколько минут!
+		form.callback
+			.callback__item
+				input(type="text" placeholder="Как вас зовут?")
+			.callback__item
+				input(placeholder="Ваш номер телефона?")
+			.callback__item
+				button.btn(type="submit") отправить
+		.agreement Согласен на обработку &nbsp;
+			a(href="") персональных данных
+
+	section.rest-block.rest-block_bg
+		.container
+			.section-title Выбирайте отдых по душе!
+			.rest
+				a(href="#").rest__item.rest__item-beach
+					img(src="./static/img/svg/tree.svg").tree1
+					img(src="./static/img/svg/tree2.svg").tree2
+					.rest__title пляж
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-cruise
+					.rest__title круизы
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-child
+					.rest__title дети +
+					.rest__text Прекрасная подборка туров для тех, кто собирается отдыхать с детьми.
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-newyear
+					img(src="./static/img/svg/snow.svg").snow
+					img(src="./static/img/svg/toy.svg").toy1
+					img(src="./static/img/svg/toy.svg").toy2
+					.rest__title новый год
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-travell
+					.rest__title культ поход
+					.rest__text Экскурсии для тех, кто хочет не только отдохнуть, но и узнать много нового.
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-exotic
+					.rest__title EXOTIC
+					.rest__text Экзотические страны (Куба, Бали, Таиланд и др.)
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-mountain
+					.rest__title в горы
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-group
+					.rest__title группы детей
+					.rest__text Туры для школьников и студентов, экскурсии, интересная программа.
+					button.btn.btn_white подробнее
+				.show-more-block
+					.show-more.btn Все варианты
+
+				a(href="#").rest__item.rest__item-group.item-hide
+					.rest__title группы детей
+					.rest__text Туры для школьников и студентов, экскурсии, интересная программа.
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-group.item-hide
+					.rest__title группы детей
+					.rest__text Туры для школьников и студентов, экскурсии, интересная программа.
+					button.btn.btn_white подробнее
+
+	section.form-callback.form-callback_blue.form-callback_blue2
+		.section-title.section-title_white Хотите больше интересных предложений?
+			span Подписывайтесь на нашу рассылку, чтобы получать больше выгодных предложений
+		form.callback
+			.callback__item
+				input(type="text" placeholder="Как вас зовут?")
+			.callback__item
+				input(placeholder="Ваш номер телефона?")
+			.callback__item
+				button.btn(type="submit") отправить
+		.agreement Согласен на обработку &nbsp;
+			a(href="") персональных данных

@@ -1,0 +1,354 @@
+extends ../layout/main
+
+block title
+	| Туристическая компания Travel Times: поиск туров по всем туроператорам, найти и заказать тур и путевки онлайн в Москве
+
+block content
+	section.bg-top.js-bg-top
+		img(src="./static/img/svg/top-tree1.svg").bg-top_1
+		img(src="./static/img/svg/top-tree2.svg").bg-top_2
+		img(src="./static/img/svg/top-tree3.svg").bg-top_3
+		.container.flex-center
+			.block-serch
+				.section-title.section-title_white Поиск туров по всем туроператорам
+	section.bg-gray
+		.container.flex-center
+			.block-serch
+				.section-title Горящие туры
+
+	section.bg-gray
+		.container
+			.section-title Путешествуйте с нами!
+			.travelling
+				.travelling__item
+					.travelling__item_first.travelling__img
+						img(src="./static/img/svg/adv1.svg")
+					.travelling__title Гарантия лучшей цены
+					.travelling__text Мы сделаем лучшее предложение на выбранный вами тур
+				.travelling__item
+					.travelling__item_second.travelling__img
+						img(src="./static/img/svg/money1.svg").travelling-icon.money
+						img(src="./static/img/svg/phone.svg").travelling-icon.telephone
+						img(src="./static/img/svg/card.svg").travelling-icon.card
+					.travelling__title Удобные способы оплаты
+					.travelling__text Для наших туристов всё самое удобное — оплата туров онлайн и офлайн
+				.travelling__item
+					.travelling__item_third.travelling__img
+						img(src="./static/img/svg/money.svg")
+					.travelling__title Рассрочка и кредит
+					.travelling__text Первоначальный взнос от 30% <br>Срок рассрочки — 4 месяца <br>Переплата — 0%
+				.travelling__item
+					.travelling__item_fourth.travelling__img
+						img(src="./static/img/svg/loop.svg")
+						svg.rect
+							rect.rect-1(x='0%',  y='0%')
+							rect.rect-2(x='25%', y='0%')
+							rect.rect-3(x='50%', y='0%')
+							rect.rect-4(x='75%', y='0%')
+
+							rect.rect-5(x='0%',  y='25%')
+							rect.rect-6(x='25%', y='25%')
+							rect.rect-7(x='50%', y='25%')
+							rect.rect-8(x='75%', y='25%')
+
+							rect.rect-9(x='0%',  y='50%')
+							rect.rect-10(x='25%', y='50%')
+							rect.rect-11(x='75%', y='50%')
+							rect.rect-12(x='50%', y='50%')
+
+							rect.rect-13(x='0%',  y='75%')
+							rect.rect-14(x='25%', y='75%')
+							rect.rect-15(x='50%', y='75%')
+							rect.rect-16(x='75%', y='75%')
+
+					.travelling__title Поиск по всем операторам
+					.travelling__text Мы предоставляем вам самые выгодные туры на базе сразу от более чем 100 надежных операторов
+	section.rest-block
+		.container
+			.section-title Выбирайте отдых по душе!
+			.rest
+				a(href="#").rest__item.rest__item-beach
+					img(src="./static/img/svg/tree.svg").tree1
+					img(src="./static/img/svg/tree2.svg").tree2
+					.rest__title пляж
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-cruise
+					.rest__title круизы
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-child
+					.rest__title дети +
+					.rest__text Прекрасная подборка туров для тех, кто собирается отдыхать с детьми.
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-newyear
+					img(src="./static/img/svg/snow.svg").snow
+					img(src="./static/img/svg/toy.svg").toy1
+					img(src="./static/img/svg/toy.svg").toy2
+					.rest__title новый год
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-travell
+					.rest__title культ поход
+					.rest__text Экскурсии для тех, кто хочет не только отдохнуть, но и узнать много нового.
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-exotic
+					.rest__title EXOTIC
+					.rest__text Экзотические страны (Куба, Бали, Таиланд и др.)
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-mountain
+					.rest__title в горы
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-group
+					.rest__title группы детей
+					.rest__text Туры для школьников и студентов, экскурсии, интересная программа.
+					button.btn.btn_white подробнее
+				.show-more-block
+					.show-more.btn Все варианты
+
+				a(href="#").rest__item.rest__item-group.item-hide
+					.rest__title группы детей
+					.rest__text Туры для школьников и студентов, экскурсии, интересная программа.
+					button.btn.btn_white подробнее
+				a(href="#").rest__item.rest__item-group.item-hide
+					.rest__title группы детей
+					.rest__text Туры для школьников и студентов, экскурсии, интересная программа.
+					button.btn.btn_white подробнее
+	section.form-callback
+		.section-title.section-title_white Вам помочь?
+			span Подберем для Вас лучший тур за несколько минут!
+		form.callback
+			.callback__item
+				input(type="text" placeholder="Как вас зовут?")
+			.callback__item
+				input(placeholder="Ваш номер телефона?")
+			.callback__item
+				button.btn(type="submit") отправить
+		.agreement Согласен на обработку &nbsp;
+			a(href="") персональных данных
+	section
+		.container
+			.section-title.section-title_margin-min Страны
+			.tab-filter
+				span.tab-filter_active по алфавиту &nbsp;
+				span /
+				span &nbsp; по популярности
+			ul.coutry
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Bkdfmcmwkmdc
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мекси
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексикаdvd
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексикаcc
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мекс
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексfvdика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексикаffdfd
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексиcvvка
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мекси
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+				li(style="background: url(./static/img/general/country.png) no-repeat left center") Мексика
+	section.form-callback.form-callback_blue
+		.section-title.section-title_white Хотите больше интересных предложений?
+			span Подписывайтесь на нашу рассылку, чтобы получать больше выгодных предложений
+		form.callback
+			.callback__item
+				input(type="text" placeholder="Как вас зовут?")
+			.callback__item
+				input(placeholder="Ваш номер телефона?")
+			.callback__item
+				button.btn(type="submit") отправить
+		.agreement Согласен на обработку &nbsp;
+			a(href="") персональных данных
+	section.bg-white
+		.container
+			.section-title Наши новости
+			.news.js-news
+				.news__item
+					img(src="./static/img/svg/arrow.svg").arrow
+					.news__img
+						img(src="./static/img/general/shutterstock-211416037.png")
+					.news__text-block
+						.news__title Спецпредложения на туры в декабре
+						.news__text Столь желанный пляжный отдых в декабре,
+				.news__item
+					img(src="./static/img/svg/arrow.svg").arrow
+					.news__img
+						img(src="./static/img/general/shutterstock-341116016.png")
+					.news__text-block
+						.news__title Спецпредложения на туры в декабре
+						.news__text Столь желанный пляжный отдых в декабре, когда за окном ничто не напоминает о лете, стоит.
+				.news__item
+					img(src="./static/img/svg/arrow.svg").arrow
+					.news__img
+						img(src="./static/img/general/shutterstock-398589580.png")
+					.news__text-block
+						.news__title Спецпредложения на туры в декабре
+						.news__text Столь желанный пляжный отдых в декабре, когда за окном ничто не напоминает о лете, стоит.
+				.news__item
+					img(src="./static/img/svg/arrow.svg").arrow
+					.news__img
+						img(src="./static/img/general/shutterstock-211416037.png")
+					.news__text-block
+						.news__title Спецпредложения на туры в декабре
+						.news__text Столь желанный пляжный отдых в декабре, когда за окном ничто не напоминает о лете, стоит.
+				.news__item
+					img(src="./static/img/svg/arrow.svg").arrow
+					.news__img
+						img(src="./static/img/general/shutterstock-341116016.png")
+					.news__text-block
+						.news__title Спецпредложения на туры в декабре
+						.news__text Столь желанный пляжный отдых в декабре, когда за окном ничто не напоминает о лете, стоит.
+				.news__item
+					img(src="./static/img/svg/arrow.svg").arrow
+					.news__img
+						img(src="./static/img/general/shutterstock-398589580.png")
+					.news__text-block
+						.news__title Спецпредложения на туры в декабре
+						.news__text Столь желанный пляжный отдых в декабре, когда за окном ничто не напоминает о лете, стоит.
+			.show-more-block
+				.show-more.btn Все варианты
+	section.bg-gray
+		.container
+			.section-title Отзывы о нас
+			.comment.js-comment
+				.comment__item
+					img(src="./static/img/svg/qiote.svg").qiote
+					img(src="./static/img/general/bitmap.png").comment__img
+					.comment__title
+						| Хлеманенко Екатерина
+					.rating-block
+						fieldset.rating
+							input#star5(type='radio', name='rating', value='5')
+							label.full(for='star5', title='Awesome - 5 stars')
+							input#star4half(type='radio', name='rating', value='4 and a half')
+							label.half(for='star4half', title='Pretty good - 4.5 stars')
+							input#star4(type='radio', name='rating', value='4')
+							label.full(for='star4', title='Pretty good - 4 stars')
+							input#star3half(type='radio', name='rating', value='3 and a half')
+							label.half(for='star3half', title='Meh - 3.5 stars')
+							input#star3(type='radio', name='rating', value='3')
+							label.full(for='star3', title='Meh - 3 stars')
+							input#star2half(type='radio', name='rating', value='2 and a half')
+							label.half(for='star2half', title='Kinda bad - 2.5 stars')
+							input#star2(type='radio', name='rating', value='2')
+							label.full(for='star2', title='Kinda bad - 2 stars')
+							input#star1half(type='radio', name='rating', value='1 and a half')
+							label.half(for='star1half', title='Meh - 1.5 stars')
+							input#star1(type='radio', name='rating', value='1')
+							label.full(for='star1', title='Sucks big time - 1 star')
+							input#starhalf(type='radio', name='rating', value='half')
+							label.half(for='starhalf', title='Sucks big time - 0.5 stars')
+
+					.comment__text
+						| Когда пробуждение по утрам все больше напоминает реанимацию, а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях и интересных турах? Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Когда пробуждение по утрам все больше напоминает реанимацию!
+				.comment__item
+					img(src="./static/img/svg/qiote.svg").qiote
+					img(src="./static/img/general/bitmap.png").comment__img
+					.comment__title
+						| Хлеманенко Екатерина
+					.rating-block
+						fieldset.rating
+							input#star5(type='radio', name='rating', value='5')
+							label.full(for='star5', title='Awesome - 5 stars')
+							input#star4half(type='radio', name='rating', value='4 and a half')
+							label.half(for='star4half', title='Pretty good - 4.5 stars')
+							input#star4(type='radio', name='rating', value='4')
+							label.full(for='star4', title='Pretty good - 4 stars')
+							input#star3half(type='radio', name='rating', value='3 and a half')
+							label.half(for='star3half', title='Meh - 3.5 stars')
+							input#star3(type='radio', name='rating', value='3')
+							label.full(for='star3', title='Meh - 3 stars')
+							input#star2half(type='radio', name='rating', value='2 and a half')
+							label.half(for='star2half', title='Kinda bad - 2.5 stars')
+							input#star2(type='radio', name='rating', value='2')
+							label.full(for='star2', title='Kinda bad - 2 stars')
+							input#star1half(type='radio', name='rating', value='1 and a half')
+							label.half(for='star1half', title='Meh - 1.5 stars')
+							input#star1(type='radio', name='rating', value='1')
+							label.full(for='star1', title='Sucks big time - 1 star')
+							input#starhalf(type='radio', name='rating', value='half')
+							label.half(for='starhalf', title='Sucks big time - 0.5 stars')
+
+					.rating
+					.comment__text
+						| Когда пробуждение по утрам все больше напоминает реанимацию, а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях и интересных турах? Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Когда пробуждение по утрам все больше напоминает реанимацию!
+				.comment__item
+					img(src="./static/img/svg/qiote.svg").qiote
+					img(src="./static/img/general/bitmap.png").comment__img
+					.comment__title
+						| Хлеманенко Екатерина
+					.rating-block
+						fieldset.rating
+							input#star5(type='radio', name='rating', value='5')
+							label.full(for='star5', title='Awesome - 5 stars')
+							input#star4half(type='radio', name='rating', value='4 and a half')
+							label.half(for='star4half', title='Pretty good - 4.5 stars')
+							input#star4(type='radio', name='rating', value='4')
+							label.full(for='star4', title='Pretty good - 4 stars')
+							input#star3half(type='radio', name='rating', value='3 and a half')
+							label.half(for='star3half', title='Meh - 3.5 stars')
+							input#star3(type='radio', name='rating', value='3')
+							label.full(for='star3', title='Meh - 3 stars')
+							input#star2half(type='radio', name='rating', value='2 and a half')
+							label.half(for='star2half', title='Kinda bad - 2.5 stars')
+							input#star2(type='radio', name='rating', value='2')
+							label.full(for='star2', title='Kinda bad - 2 stars')
+							input#star1half(type='radio', name='rating', value='1 and a half')
+							label.half(for='star1half', title='Meh - 1.5 stars')
+							input#star1(type='radio', name='rating', value='1')
+							label.full(for='star1', title='Sucks big time - 1 star')
+							input#starhalf(type='radio', name='rating', value='half')
+							label.half(for='starhalf', title='Sucks big time - 0.5 stars')
+
+					.rating
+					.comment__text
+						| Когда пробуждение по утрам все больше напоминает реанимацию, а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях и интересных турах? Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Хотите узнавать первыми о выгодных предложениях Присоединяйтесь к нам! а градус за окном понижается - пора в отпуск! Когда пробуждение по утрам все больше напоминает реанимацию!
+
+	section.bg-white-last
+		.container
+			.section-title Туристическая компания Travel Times — <br>традиции хорошего отдыха!
+			.section-text
+				p Travel Times — туристическая компания нового уровня. Мы постоянно развиваемся и расширяем спектр услуг. Опыт наших менеджеров поможет вам подобрать тур в любую точку мира, запланировать путешествие любой сложности.
+				p Вы хотите посетить несколько стран и сэкономить на перелетах?
+				p Мы проложим оптимальный по соотношению цена/качество маршрут.
+				p Вы ищите горящие путевки?
+				p На нашем сайте представлены лучшие предложения от ведущих туроператоров.
+				p Travel Times — это в первую очередь удобный и выгодный сервис. Вы можете заказать звонок в подходящее вам время, и наши специалисты свяжутся с вами. А если вы цените свое время, то наш курьер будет в нужном месте со всеми необходимыми документами. Отличный сервис от опытнейших менеджеров, самые свежие продукты туристической индустрии, гибкие цены и широкий выбор путешествий — все это Travel Times!
