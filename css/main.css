@@ -1412,7 +1412,7 @@ header {
   z-index: 40; }
   .bg-top:before {
     content: "";
-    background: url("../img/general/bg-topballs.png") no-repeat center;
+    background: url("../img/general/bg-top-balls.png") no-repeat center;
     background-size: cover;
     position: absolute;
     left: 0;
