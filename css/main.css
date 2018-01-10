@@ -1654,6 +1654,9 @@ header {
       transition: 0.3s;
       left: 18px;
       top: 23px; }
+    .travelling__item:hover .travelling__item_fourth .block-rect {
+      top: 33px;
+      right: 34px; }
   .travelling__title {
     color: #3d4654;
     font-size: 18px;
