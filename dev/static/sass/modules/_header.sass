@@ -24,23 +24,24 @@ header
 	background: url("../img/svg/telegram.svg") no-repeat center
 	background-size: cover
 .social__item_fb
-	background: url("../img/svg/facebook.svg") no-repeat center
+	background: url("../img/svg/fb.svg") no-repeat center
 	background-size: cover
 .social__item_vk
-	background: url("../img/svg/vk.svg") no-repeat center
+	background: url("../img/general/vk.png") no-repeat center
 	background-size: cover
+	width: 26px
 .social__item_insta
 	background: url("../img/svg/insta.svg") no-repeat center
 	background-size: cover
 
 
 .buy-tour
-	color: $mainBlue
+	color: #00abf4
 	+font-size(14px)
 	display: inline-block
 	line-height: 1
 	margin-left: 10px
-	border-bottom: 1px solid $mainBlue
+	border-bottom: 1px solid #00abf4
 	padding-bottom: 3px
 
 .logo img
@@ -59,7 +60,7 @@ header
 	font-weight: bold
 	flex-wrap: nowrap
 	&__item
-		color: $mainBlue
+		color: #00abf4
 		margin-right: 10px
 		&:last-of-type
 			margin-right: 0
@@ -83,13 +84,16 @@ header
 	width: 100%
 	text-align: center
 	&__item
-		padding: 18px 0
+		padding: 13px 0
 		+font-size(12px)
 		color: #46505d
 		text-transform: uppercase
 		font-weight: bold
 		margin: 0 20px
+		line-height: normal
 		cursor: pointer
+		&:hover
+			color: #00abf4
 	.container
 		height: auto
 		padding:  0
@@ -97,7 +101,11 @@ header
 		justify-content: center
 	.sandwich
 		float: right
-		padding: 17px
+		padding: 10px
+		height: 46px
+	.sandwich:after
+		width: 24px
+		height: 22px
 	.place
 		text-align: left
 
@@ -178,6 +186,7 @@ header
 
 .header .level-1 .dropdown-menu
 	z-index: 100
+	top: 45px
 
 .header .level-1 ul
 	padding-left: 15px
@@ -199,5 +208,8 @@ header
 	content: ""
 	background-size: cover
 
-.header .level-0
-	z-index: 150
+.header
+	padding-top: 71px
+	.level-0
+		z-index: 150
+		padding: 14px

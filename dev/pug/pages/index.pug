@@ -8,6 +8,9 @@ block content
 		img(src="./static/img/svg/top-tree1.svg").bg-top_1
 		img(src="./static/img/svg/top-tree2.svg").bg-top_2
 		img(src="./static/img/svg/top-tree3.svg").bg-top_3
+		img(src="./static/img/svg/balls-bg1.svg").bg-top_4
+		img(src="./static/img/svg/balls-bg2.svg").bg-top_5
+		img(src="./static/img/svg/balls-bg1.svg").bg-top_6
 		.container.flex-center
 			.block-serch
 				.section-title.section-title_white Поиск туров по всем туроператорам
@@ -34,32 +37,34 @@ block content
 					.travelling__text Для наших туристов всё самое удобное — оплата туров онлайн и офлайн
 				.travelling__item
 					.travelling__item_third.travelling__img
-						img(src="./static/img/svg/money.svg")
+						.money-img
+							img(src="./static/img/svg/money.svg")
 					.travelling__title Рассрочка и кредит
 					.travelling__text Первоначальный взнос от 30% <br>Срок рассрочки — 4 месяца <br>Переплата — 0%
 				.travelling__item
 					.travelling__item_fourth.travelling__img
 						img(src="./static/img/svg/loop.svg")
-						svg.rect
-							rect.rect-1(x='0%',  y='0%')
-							rect.rect-2(x='25%', y='0%')
-							rect.rect-3(x='50%', y='0%')
-							rect.rect-4(x='75%', y='0%')
+						.block-rect
+							.rect
+								.rect-1.rect__item
+								.rect-2.rect__item
+								.rect-3.rect__item
+								.rect-4.rect__item
 
-							rect.rect-5(x='0%',  y='25%')
-							rect.rect-6(x='25%', y='25%')
-							rect.rect-7(x='50%', y='25%')
-							rect.rect-8(x='75%', y='25%')
+								.rect-5.rect__item
+								.rect-6.rect__item
+								.rect-7.rect__item
+								.rect-8.rect__item
 
-							rect.rect-9(x='0%',  y='50%')
-							rect.rect-10(x='25%', y='50%')
-							rect.rect-11(x='75%', y='50%')
-							rect.rect-12(x='50%', y='50%')
+								.rect-9.rect__item
+								.rect-10.rect__item
+								.rect-11.rect__item
+								.rect-12.rect__item
 
-							rect.rect-13(x='0%',  y='75%')
-							rect.rect-14(x='25%', y='75%')
-							rect.rect-15(x='50%', y='75%')
-							rect.rect-16(x='75%', y='75%')
+								.rect-13.rect__item
+								.rect-14.rect__item
+								.rect-15.rect__item
+								.rect-16.rect__item
 
 					.travelling__title Поиск по всем операторам
 					.travelling__text Мы предоставляем вам самые выгодные туры на базе сразу от более чем 100 надежных операторов
@@ -83,6 +88,7 @@ block content
 					img(src="./static/img/svg/snow.svg").snow
 					img(src="./static/img/svg/toy.svg").toy1
 					img(src="./static/img/svg/toy.svg").toy2
+					img(src="./static/img/svg/cr-tree.svg").cr-tree
 					.rest__title новый год
 					button.btn.btn_white подробнее
 				a(href="#").rest__item.rest__item-travell

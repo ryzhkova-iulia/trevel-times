@@ -6,17 +6,6 @@
 	padding: 0
 	overflow: hidden
 	z-index: 40
-	&:before
-		content: ""
-		background: url("../img/general/bg-top-balls.png") no-repeat center
-		background-size: cover
-		position: absolute
-		left: 0
-		right: 0
-		top: 0
-		z-index: 50
-		height: 501px
-
 	&_1
 		position: absolute
 		right: 5%
@@ -32,8 +21,25 @@
 		left: 0
 		top: 0
 		transition: 0.4s
+	&_4
+		position: absolute
+		left: 20%
+		z-index: 60
+	&_5
+		position: absolute
+		left: 50%
+		z-index: 100
+		top: 30%
+	&_6
+		position: absolute
+		right: 20%
+		z-index: 100
+		top: 10%
+		transform: rotate(20deg)
 
-
+.block-serch
+	position: relative
+	z-index: 100
 
 .bg-top_animate .bg-top_1
 		transition: 0.4s
@@ -112,14 +118,25 @@
 		transition: 0.3s
 		cursor: pointer
 		&_first
+			position: relative
 			width: 130px
 			height: 130px
 			background-image: linear-gradient(to bottom, #00abf4, #83edff)
 			border-radius: 50%
 			+flexBlockColumn
 			justify-content: center
+			transition: 0.3s
 			img
 				width: 85px
+			&:before
+				content: ""
+				position: absolute
+				top: 20px
+				background: url("../img/svg/balls-bg.svg") no-repeat center
+				background-size: cover
+				width: 96px
+				height: 39px
+				z-index: 100
 		&_second
 			position: relative
 			border-radius: 50%
@@ -128,6 +145,16 @@
 			width: 130px
 			height: 130px
 			background-image: linear-gradient(to bottom, #0087c0, #33c5f8 67%, #83edff)
+			transition: 0.3s
+			&:before
+				content: ""
+				position: absolute
+				top: 10px
+				background: url("../img/svg/card-bg.svg") no-repeat center
+				background-size: cover
+				width: 96px
+				height: 39px
+				z-index: 100
 		&_third
 			border-radius: 50%
 			+flexBlockColumn
@@ -136,6 +163,14 @@
 			height: 130px
 			background-image: linear-gradient(to bottom, #00abf4, #83edff)
 			transition: 0.3s
+			position: relative
+			img
+				//position: absolute
+				//top: 20px
+				//left: 21px
+				//z-index: 50
+				transition: 0.3s
+
 		&_fourth
 			position: relative
 			border-radius: 50%
@@ -145,16 +180,38 @@
 			height: 130px
 			background-image: linear-gradient(to bottom, #0188c1 2%, #86e9ff)
 			transition: 0.3s
-
-		&:hover .travelling__item_first
-			transform: scale(1.1)
+			&:before
+				content: ""
+				position: absolute
+				top: 10px
+				background: url("../img/svg/loop-bg.svg") no-repeat center
+				background-size: cover
+				width: 96px
+				height: 39px
+				z-index: 100
+		&:hover .travelling__img
+			transform: scale(1.06)
 			transition: 0.3s
-		&:hover
-			transform: scale(1.1)
+		&:hover .travelling__item_first img
+			transform: scale(1.06)
 			transition: 0.3s
 		&:hover .travelling__item_third
-			transform: rotate(180deg)
+			transform: scale(1.06)
 			transition: 0.3s
+		&:hover .money-img
+			transform: scale(1.06)
+			transition: 0.3s
+			left: 15px
+			top: 23px
+		&:hover .travelling__item_third img
+			transform: rotate(220deg)
+			transition: 0.3s
+
+		&:hover .travelling__item_fourth img
+			transform: scale(1.01)
+			transition: 0.3s
+			left: 18px
+			top: 23px
 
 	&__title
 		color: #3d4654
@@ -164,6 +221,9 @@
 		font-weight: bold
 		text-align: center
 		margin-bottom: 10px
+		line-height: 1.06
+		font-family: 'SF UI Display-bold'
+		transition: 0.3s
 	&__text
 		color: #3d4654
 		+font-size(14px)
@@ -173,12 +233,22 @@
 		font-weight: 500
 		text-align: center
 
+.travelling__item:hover .travelling__title
+	transform: scale(1.08)
+	transition: 0.3s
+
 .travelling-icon
 	position: absolute
 	transition: 0.3s
+
+.money-img
+	position: absolute
+	top: 20px
+	left: 21px
+	transition: 0.3s
 .money
 	left: 5px
-	top: 37px
+	top: 45px
 	width: 67px
 	height: 75px
 	z-index: 20
@@ -187,7 +257,8 @@
 	z-index: 30
 	transition: 0.3s
 	top: 30px
-	left: 40%
+	left: 34%
+
 
 .card
 	z-index: 40
@@ -198,131 +269,165 @@
 .travelling__item:hover .money
 	left: 2px
 	top: 33px
+	transform: rotate(16deg)
 	transition: 0.3s
+//.travelling__item:hover .money-img
+//	transition: 0.3s
+//	transform: scale(1.06)
 
 .travelling__item:hover .telephone
 	top: 15px
 	transition: 0.3s
+	transform: rotate(10deg)
 
 .travelling__item:hover .card
+	transform: rotate(14deg)
 	right: 5px
 	top: 40px
 	transition: all 0.3s
-
+.block-rect
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	overflow: hidden
+	position: absolute
+	top: 34px
+	right: 34px
 .rect
 	width: 50px
 	height: 50px
 	border-radius: 50%
+	display: flex
+	flex-wrap: wrap
 	position: absolute
-	top: 34px
-	right: 34px
-	rect
+	&__item
 		width: 25%
 		height: 25%
+		display: inline-block
+		transition: 0.3s
+		position: absolute
 
 .rect-1
-	fill: #08a271
+	background-image: linear-gradient(to bottom, #00a540, #0ca282)
 	transition: 0.3s
+	left: 0
+	top: 0
+
 .rect-2
-	fill: #ffe01c
+	background-image: linear-gradient(to bottom, #fffa0d, #ffcf27)
 	transition: 0.3s
+	left: 25%
+	top: 0
+	z-index: 10
+
 .rect-3
-	fill: #ff9705
+	background-image: linear-gradient(to bottom, #ffb40a, #ff8404)
 	transition: 0.3s
+	left: 50%
+	top: 0
 .rect-4
-	fill: #08a271
+	background-image: linear-gradient(to bottom, #00a549, #0ca282)
 	transition: 0.3s
+	left: 75%
+	top: 0
 
 .rect-5
-	fill: #ff9705
+	background-image: linear-gradient(to bottom, #ffb80a, #ff8204)
 	transition: 0.3s
+	top: 25%
+	left: 0
+
 .rect-6
-	fill: #51d1f4
+	background-image: linear-gradient(to bottom, #0bb1f5, #5ed9fa)
 	transition: 0.3s
+	top: 25%
+	left: 25%
+	z-index: 5
 .rect-7
-	fill: #ffe01c
+	background-image: linear-gradient(to bottom, #fffa0d, #ffcf27)
 	transition: 0.3s
+	top: 25%
+	left: 50%
+	z-index: 10
 .rect-8
-	fill: #51d1f4
+	background-image: linear-gradient(to bottom, #0bb1f5, #5ed9fa)
 	transition: 0.3s
+	top: 25%
+	left: 75%
+	z-index: 5
 
 .rect-9
-	fill: #ff9705
+	background-image: linear-gradient(to bottom, #ffb80a, #ffe704)
 	transition: 0.3s
+	top: 50%
+	left: 0
 .rect-10
-	fill: #08a271
+	background-image: linear-gradient(to bottom, #02a55b, #1dd18e)
 	transition: 0.3s
+	top: 50%
+	left: 25%
+	z-index: 10
 .rect-11
-	fill: #ff9705
+	background-image: linear-gradient(to bottom, #ffb80a, #ff8204)
 	transition: 0.3s
+	top: 50%
+	left: 50%
+	z-index: 5
 .rect-12
-	fill: #ffe01c
+	background-image: linear-gradient(to bottom, #ffb80a, #ffe704)
 	transition: 0.3s
+	top: 50%
+	left: 75%
 
 .rect-13
-	fill: #08a271
+	background-image: linear-gradient(to bottom, #009235, #0ca282)
 	transition: 0.3s
+	top: 75%
+	left: 0
 .rect-14
-	fill: #ff9705
+	background-image: linear-gradient(to bottom, #ffb80a, #ff8204)
 	transition: 0.3s
+	top: 75%
+	left: 25%
+	z-index: 5
 .rect-15
-	fill: #08a271
+	background-image: linear-gradient(to bottom, #02a55b, #1dd18e)
 	transition: 0.3s
+	top: 75%
+	left: 50%
+	z-index: 10
 .rect-16
-	fill: #51d1f4
+	background-image: linear-gradient(to bottom, #18b8f6, #52d3f9)
 	transition: 0.3s
+	top: 75%
+	left: 75%
 
 .travelling__item
-	&:hover .rect-1
-		fill: #ffe01c
-		transition: 0.3s
 	&:hover .rect-2
-		fill: #08a271
-		transition: 0.3s
-	&:hover .rect-3
-		fill: #ffe01c
-		transition: 0.3s
-	&:hover .rect-4
-		fill: #51d1f4
-		transition: 0.3s
-	&:hover .rect-5
-		fill: #51d1f4
-		transition: 0.3s
+		transition: 0.5s
+		top: 25%
 	&:hover .rect-6
-		fill: #ff9705
-		transition: 0.3s
+		transition: 0.5s
+		top: 0
 	&:hover .rect-7
-		fill: #51d1f4
-		transition: 0.3s
+		left: 75%
+		transition: 0.5s
 	&:hover .rect-8
-		fill: #ff9705
-		transition: 0.3s
-
-	&:hover .rect-9
-		fill: #08a271
-		transition: 0.3s
+		left:  50%
+		transition: 0.5s
 	&:hover .rect-10
-		fill: #ff9705
-		transition: 0.3s
+		transition: 0.5s
+		top: 75%
 	&:hover .rect-11
-		fill: #ffe01c
-		transition: 0.3s
-	&:hover .rect-12
-		fill: #08a271
-		transition: 0.3s
-
-	&:hover .rect-13
-		fill: #ff9705
-		transition: 0.3s
+		transition: 0.5s
+		top: 75%
 	&:hover .rect-14
-		fill: #08a271
-		transition: 0.3s
+		transition: 0.5s
+		top: 50%
 	&:hover .rect-15
-		fill: #51d1f4
-		transition: 0.3s
-	&:hover .rect-16
-		fill: #08a271
-		transition: 0.3s
+		transition: 0.5s
+		top: 50%
+
 
 
 .rest-block
@@ -356,6 +461,10 @@
 			right: 20px
 			transition: 0.3s
 			z-index: 20
+			color: #373737
+			text-transform: uppercase
+			+font-size(13px)
+			font-family: 'SF UI Display-bold'
 
 		&:hover .btn
 			background-color: #FFFFFF
@@ -364,6 +473,8 @@
 			transition: 0.3s
 
 	&__title
+		font-family: 'SF UI Display-bold'
+		text-transform: uppercase
 		padding-top: 37px
 		padding-left: 22px
 		text-align: left
@@ -372,11 +483,14 @@
 		font-weight: 900
 		line-height: 0.9
 		margin-bottom: 20px
+		position: relative
+		z-index: 20
 
 	&__text
 		+font-size(15px)
-		color: #000
+		color: #444444
 		padding-left: 22px
+		font-weight: 500
 		width: 100%
 		max-width: 252px
 		line-height: normal
@@ -402,20 +516,22 @@
 		z-index: 30
 	&:before
 		position: absolute
-		bottom: 0
-		left: 0
-		z-index: 10
+		bottom: -60px
+		right: -30px
 		content: ""
-		width: 300px
-		height: 200px
+		width: 350px
+		height: 275px
 		display: block
-		background: #00abf4 url("../img/general/cruise.png") no-repeat 50%
+		background: url("../img/general/cruise.png") no-repeat 50%
 		transition: 0.6s
 		background-size: cover
+		z-index: 50
 	&:hover.rest__item-cruise:before
-		left: -20px
-		transition: left 0.6s
+		right: 0px
+		transition: right 0.6s
 		background-size: cover
+	.btn
+		z-index: 60
 
 .rest__item-child
 	background-color: #ffbe00
@@ -462,15 +578,18 @@
 .rest__item-newyear
 	background-image: linear-gradient(to bottom, #00abf4, #49e4ff)
 	position: relative
+	.rest__title
+		position: relative
+		z-index: 15
 	&:hover .snow
 		top: 30px
 		transition: 0.3s
 	&:hover .toy1
 		transition: 0.3s
-		transform: rotate(-5deg)
+		transform: rotate(5deg)
 	&:hover .toy2
 		transition: 0.3s
-		transform: rotate(5deg)
+		transform: rotate(-5deg)
 
 .snow
 	transition: 0.3s
@@ -483,17 +602,25 @@
 
 .toy1
 	position: absolute
-	top: 50%
-	left: 15%
-	transform: rotate(15deg)
+	top: 59%
+	left: 22%
+	//transform: rotate(15deg)
 	transition: 0.3s
+	z-index: 15
 
 .toy2
 	transition: 0.3s
 	position: absolute
-	top: 40%
+	top: 50%
 	right: 50%
-	transform: rotate(-15deg)
+	//transform: rotate(-15deg)
+	z-index: 15
+
+.cr-tree
+	position: absolute
+	right: 0
+	top: 85px
+	z-index: 10
 
 .form-callback
 	background: #FFFFFF url("../img/general/group-2@2x.png") no-repeat center

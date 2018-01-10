@@ -37,3 +37,14 @@
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'SF UI Display-bold';
+    src: url('SFUIDisplay-Bold.eot');
+    src: url('SFUIDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('SFUIDisplay-Bold.woff2') format('woff2'),
+    url('SFUIDisplay-Bold.woff') format('woff'),
+    url('SFUIDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
