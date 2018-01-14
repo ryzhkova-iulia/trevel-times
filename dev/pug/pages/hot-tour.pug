@@ -77,7 +77,7 @@ block content
 				input(placeholder="Ваш номер телефона?")
 			.callback__item
 				button.btn(type="submit") отправить
-		.agreement Согласен на обработку &nbsp;
+		.agreement.agreement_white Согласен на обработку &nbsp;
 			a(href="") персональных данных
 
 	section.rest-block.rest-block_bg
@@ -100,6 +100,8 @@ block content
 					img(src="./static/img/svg/snow.svg").snow
 					img(src="./static/img/svg/toy.svg").toy1
 					img(src="./static/img/svg/toy.svg").toy2
+					img(src="./static/img/svg/christmas-stars.svg").stars
+					img(src="./static/img/svg/cr-tree.svg").cr-tree
 					.rest__title новый год
 					button.btn.btn_white подробнее
 				a(href="#").rest__item.rest__item-travell
@@ -130,14 +132,18 @@ block content
 					button.btn.btn_white подробнее
 
 	section.form-callback.form-callback_blue.form-callback_blue2
-		.section-title.section-title_white Хотите больше интересных предложений?
-			span Подписывайтесь на нашу рассылку, чтобы получать больше выгодных предложений
-		form.callback
-			.callback__item
-				input(type="text" placeholder="Как вас зовут?")
-			.callback__item
-				input(placeholder="Ваш номер телефона?")
-			.callback__item
-				button.btn(type="submit") отправить
-		.agreement Согласен на обработку &nbsp;
-			a(href="") персональных данных
+		img(src="./static/img/svg/letter1.svg").letter1.letter
+		img(src="./static/img/svg/letter2.svg").letter2.letter
+		img(src="./static/img/svg/letter3.svg").letter3.letter
+		.container
+			.section-title.section-title_white Хотите больше интересных предложений?
+				span Подписывайтесь на нашу рассылку, чтобы получать больше выгодных предложений
+			form.callback
+				.callback__item
+					input(type="text" placeholder="Как вас зовут?")
+				.callback__item
+					input(placeholder="Ваш номер телефона?")
+				.callback__item
+					button.btn(type="submit") отправить
+			.agreement Согласен на обработку &nbsp;
+				a(href="") персональных данных

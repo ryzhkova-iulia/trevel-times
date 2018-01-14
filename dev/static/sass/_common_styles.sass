@@ -8,6 +8,7 @@
 	justify-content: space-between
 
 .btn
+	font-family: 'SF UI Display-heavy'
 	background-color: $lightBlue
 	color: #FFFFFF
 	font-size: 1rem
@@ -18,7 +19,7 @@
 	border-radius: 20.5px
 	cursor: pointer
 	&:hover
-		background-color: lighten($lightBlue, 20%)
+		background-color: #00c4ff
 	&_white
 		border-radius: 16px
 		background-color: #ffffff
@@ -36,19 +37,22 @@
 	background-color: #FFFFFF
 
 .section-title
-	font-family: 'SF UI Display-bold'
+	font-family: 'SF UI Display-heavy'
 	+font-size(30px)
 	font-weight: 900
 	text-align: center
 	width: 100%
 	margin-bottom: 50px
 	line-height: 1.1
+	color: #28313e
 	&_white
 		color: #FFFFFF
 	span
+		font-family: 'SF UI Display-m'
 		+font-size(18px)
 		margin-top: 10px
 		display: block
+		font-weight: 500
 	&_margin-min
 		margin-bottom: 15px
 .section-text
@@ -58,6 +62,8 @@
 	color: #28313e
 	margin: auto
 	+font-size(14px)
+	font-weight: 500
+	font-family: 'SF UI Display-m'
 	p
 		margin-bottom: 5px
 

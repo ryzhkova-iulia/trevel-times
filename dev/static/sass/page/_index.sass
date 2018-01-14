@@ -61,9 +61,7 @@
 .bg-top_orange
 	background: #FFFFFF url("../img/general/top-bg-orange.png") no-repeat center top
 	height: auto
-	background-size: contain
-	//&:before
-	//	display: none
+	//background-size: contain
 	.section-title
 		+font-size(40px)
 		margin-top: 50px
@@ -135,6 +133,8 @@
 			justify-content: center
 			transition: 0.3s
 			img
+				position: relative
+				z-index: 10
 				width: 85px
 			&:before
 				content: ""
@@ -144,7 +144,7 @@
 				background-size: cover
 				width: 96px
 				height: 39px
-				z-index: 100
+				z-index: 1
 		&_second
 			position: relative
 			border-radius: 50%
@@ -162,7 +162,7 @@
 				background-size: cover
 				width: 96px
 				height: 39px
-				z-index: 100
+				z-index: 1
 		&_third
 			border-radius: 50%
 			+flexBlockColumn
@@ -184,6 +184,8 @@
 			height: 130px
 			background-image: linear-gradient(to bottom, #0188c1 2%, #86e9ff)
 			transition: 0.3s
+			img
+				z-index: 10
 			&:before
 				content: ""
 				position: absolute
@@ -192,7 +194,7 @@
 				background-size: cover
 				width: 96px
 				height: 39px
-				z-index: 100
+				z-index: 1
 		&:hover .travelling__img
 			transform: scale(1.06)
 			transition: 0.3s
@@ -233,6 +235,7 @@
 		font-family: 'SF UI Display-bold'
 		transition: 0.3s
 	&__text
+		font-family: 'SF UI Display-m'
 		color: #3d4654
 		+font-size(14px)
 		width: 100%
@@ -251,11 +254,11 @@
 
 .money-img
 	position: absolute
-	top: 20px
-	left: 21px
+	top: 18px
+	left: 22px
 	transition: 0.3s
 .money
-	left: 5px
+	left: 9px
 	top: 45px
 	width: 67px
 	height: 75px
@@ -265,7 +268,7 @@
 	z-index: 30
 	transition: 0.3s
 	top: 30px
-	left: 34%
+	left: 35%
 
 
 .card
@@ -275,20 +278,15 @@
 	top: 50px
 
 .travelling__item:hover .money
-	left: 2px
-	top: 33px
 	transform: rotate(16deg)
 	transition: 0.3s
 
 .travelling__item:hover .telephone
-	top: 15px
 	transition: 0.3s
 	transform: rotate(10deg)
 
 .travelling__item:hover .card
 	transform: rotate(14deg)
-	right: 5px
-	top: 40px
 	transition: all 0.3s
 .block-rect
 	width: 50px
@@ -298,6 +296,7 @@
 	position: absolute
 	top: 34px
 	right: 34px
+	z-index: 20
 .rect
 	width: 50px
 	height: 50px
@@ -474,11 +473,11 @@
 		&:hover .btn
 			background-color: #FFFFFF
 			bottom: 20px
-			box-shadow: 1px 1px 2px #444
+			box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.35)
 			transition: 0.3s
 
 	&__title
-		font-family: 'SF UI Display-bold'
+		font-family: 'SF UI Display-heavy'
 		text-transform: uppercase
 		padding-top: 37px
 		padding-left: 22px
@@ -492,6 +491,7 @@
 		z-index: 20
 
 	&__text
+		font-family: 'SF UI Display-m'
 		+font-size(15px)
 		color: #444444
 		padding-left: 22px
@@ -507,6 +507,10 @@
 	display: inline-block
 	+font-size(18px)
 	margin-top: 10px
+	border-radius: 25px
+	padding: 16px 58px
+	line-height: 1
+	font-family: 'SF UI Display-heavy'
 
 .item-hide
 	display: none
@@ -521,18 +525,18 @@
 		z-index: 30
 	&:before
 		position: absolute
-		bottom: -60px
-		right: -30px
+		bottom: 0
+		right: -35px
 		content: ""
-		width: 350px
-		height: 275px
+		width: 321px
+		height: 210px
 		display: block
 		background: url("../img/general/cruise.png") no-repeat 50%
 		transition: 0.6s
 		background-size: cover
 		z-index: 50
 	&:hover.rest__item-cruise:before
-		right: 0px
+		right: -10px
 		transition: right 0.6s
 		background-size: cover
 	.btn
@@ -591,25 +595,34 @@
 		transition: 0.3s
 	&:hover .toy1
 		transition: 0.3s
-		transform: rotate(5deg)
+		transform: rotate(-15deg)
 	&:hover .toy2
 		transition: 0.3s
-		transform: rotate(-5deg)
+		transform: rotate(15deg)
+	&:hover .stars
+		opacity: 1
+		transition: 0.3s
 
 .snow
 	transition: 0.3s
 	position: absolute
-	z-index: 10
+	z-index: 50
 	width: 230px
 	height: 200px
 	top: 15px
 	left: 10px
 
+.stars
+	position: absolute
+	bottom: 40px
+	left: 85px
+	z-index: 40
+	opacity: 0
+
 .toy1
 	position: absolute
 	top: 59%
-	left: 22%
-	//transform: rotate(15deg)
+	left: 24%
 	transition: 0.3s
 	z-index: 15
 
@@ -618,7 +631,6 @@
 	position: absolute
 	top: 50%
 	right: 50%
-	//transform: rotate(-15deg)
 	z-index: 15
 
 .cr-tree
@@ -632,14 +644,33 @@
 	background-size: cover
 	width: 100%
 	padding: 150px 0
+	position: relative
 	&_blue
 		background: url("../img/general/bg-blue.png") no-repeat center
 		background-size: cover
 		.btn
 			background-color: $orange
 	&_blue2
+		position: relative
 		background: url("../img/general/bg-blue2.png") no-repeat center
 		background-size: cover
+	.container
+		position: relative
+		z-index: 10
+
+
+.letter
+	position: absolute
+	z-index: 1
+.letter1
+	right: 10%
+	top: 50%
+.letter2
+	left: 15%
+	top: 30%
+.letter3
+	left: 5%
+	top: 60%
 
 .callback
 	+flexBlockRow
@@ -653,64 +684,80 @@
 			margin-right: 5px
 			height: 45px
 			padding-left: 15px
+			border: none
+		input::placeholder
+			font-family: 'SF UI Display-m'
+			font-weight: 500
+			color: #5d697a
+			font-size: 1rem
 	.btn
+		font-family: 'SF UI Display-heavy'
+		+font-size(16px)
 		border-radius: 0
 		height: 45px
 		width: 205px
 		text-transform: uppercase
 
-.agreement
-	width: 100%
-	max-width: 756px
-	text-align: left
-	margin: auto
-	+font-size(14px)
-	font-weight: 500
-
 .tab-filter
+	font-family: 'SF UI Display-m'
 	+flexBlockRow
 	width: 100%
 	justify-content: center
 	font-weight: 500
 	color: #3e4857
-	margin-bottom: 40px
+	margin-bottom: 34px
 	span
 		cursor: pointer
 	&_active
 		color: $lightBlue
 .coutry
 	width: 100%
-	max-width: 965px
+	max-width: 1100px
 	margin: auto
-	//+flexBlockRow
-	//justify-content: flex-start
-	//flex-wrap: wrap
 	margin-bottom: 50px
 	column-count: 6
 	li
-		//width: 100%
 		width: 193px
+		font-weight: 600
 		+font-size(15px)
 		color: #3e4758
 		display: inline-block
 		cursor: pointer
-		padding-left: 45px
-		margin-bottom: 10px
-
+		margin-bottom: 8px
+		line-height: 1
+		a
+			font-weight: 600
+			line-height: 1
+			+font-size(15px)
+			color: #3e4758
+		img
+			width: 17px
+			height: 11px
+			margin-right: 15px
 .agreement
-	color: #FFFFFF
-	+font-size(14px)
+	font-family: 'SF UI Display-m'
+	color: #495a72
+	width: 100%
+	max-width: 756px
+	text-align: left
+	margin: auto
+	+font-size(13px)
 	margin-top: 12px
 	a
-		text-decoration: underline
+		color: #495a72
+		border-bottom: 1px solid
+		line-height: 1.21
+	&_white
 		color: #FFFFFF
+		a
+			color: #fff
 .news + .show-more-block
 	margin-top: 20px
 
 .news
 	text-align: center
 	width: 100%
-	max-width: 1008px
+	max-width: 1040px
 	margin: auto
 	padding: 0 30px
 
@@ -722,8 +769,9 @@
 			width: 100%
 			transition: 0.3s
 	&__item
-		margin: 0 17px
-		box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.2)
+		width: 297px
+		margin: 15px 18px
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2)
 		display: inline-block
 		cursor: pointer
 		position: relative
@@ -731,7 +779,11 @@
 		&:hover .news__img img
 			transform: scale(1.2)
 			transition: 0.3s
+		&:hover
+			box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.2)
+
 	&__title
+		font-family: 'SF UI Display-heavy'
 		text-align: left
 		height: 42px
 		+font-size(18px)
@@ -783,6 +835,9 @@
 		width: 20px
 		height: 28px
 		display: inline-block
+
+.section-comments
+	padding: 0
 .comment
 	text-align: center
 	width: 100%
@@ -806,11 +861,13 @@
 		transform: translateX(-50%)
 		top: -40px
 	&__title
+		font-family: 'SF UI Display-heavy'
 		+font-size(20px)
 		font-weight: 900
 		color: #3d4654
 		margin-bottom: 5px
 	&__text
+		font-family: 'SF UI Display-m'
 		+font-size(14px)
 		font-weight: 500
 		line-height: 1.29

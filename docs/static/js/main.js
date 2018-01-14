@@ -21,6 +21,9 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: false,
+        variableWidth: true,
+        centerMode: true,
+        infinite: true,
         responsive: [
             {
                 breakpoint: 768,

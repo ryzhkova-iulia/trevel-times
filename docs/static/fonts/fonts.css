@@ -29,7 +29,7 @@
 }
 
 @font-face {
-    font-family: 'SF UI Display';
+    font-family: 'SF UI Display-m';
     src: url('SFUIDisplay-Medium.eot');
     src: url('SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
     url('SFUIDisplay-Medium.woff') format('woff'),
@@ -48,3 +48,14 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'SF UI Display-heavy';
+    src: url('SFUIDisplay-Heavy.eot');
+    src: url('SFUIDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('SFUIDisplay-Heavy.woff2') format('woff2'),
+    url('SFUIDisplay-Heavy.woff') format('woff'),
+    url('SFUIDisplay-Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+

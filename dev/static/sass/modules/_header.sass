@@ -12,6 +12,13 @@ header
 		height: 25px
 		margin: 0 3px
 		cursor: pointer
+		position: relative
+		border-radius: 50%
+		img
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			position: absolute
 	+flexBlockRow
 	justify-content: flex-start
 
@@ -21,29 +28,42 @@ header
 	align-items: flex-start
 
 .social__item_telegram
-	background: url("../img/svg/telegram.svg") no-repeat center
-	background-size: cover
+	background-color: #00abff
+	&:hover
+		background-color: #43d3ff
 .social__item_fb
-	background: url("../img/svg/fb.svg") no-repeat center
-	background-size: cover
+	background-color: #2648ca
+	img
+		left: 13px
+	&:hover
+		background-color: #5175ff
 .social__item_vk
-	background: url("../img/general/vk.png") no-repeat center
-	background-size: cover
-	width: 26px
+	background-color: #00abff
+	&:hover
+		background-color: #43d3ff
 .social__item_insta
-	background: url("../img/svg/insta.svg") no-repeat center
+	background: url("../img/svg/insta-bg.svg") no-repeat center
 	background-size: cover
+	img
+		left: 13px
+	&:hover
+		background: url("../img/svg/insta-hover-bg.svg") no-repeat center
+		background-size: cover
 
 
 .buy-tour
+	font-family: 'SF UI Display-heavy'
 	color: #00abf4
 	+font-size(14px)
 	display: inline-block
 	line-height: 1
 	margin-left: 10px
-	border-bottom: 1px solid #00abf4
+	border-bottom: solid 1px #00abf4
 	padding-bottom: 3px
-
+	font-weight: 900
+	&:hover
+		color: #0081df
+		border-bottom: solid 1px #0081df
 .logo img
 	width: 183px
 
@@ -60,23 +80,27 @@ header
 	font-weight: bold
 	flex-wrap: nowrap
 	&__item
+		font-family: 'SF UI Display-bold'
 		color: #00abf4
 		margin-right: 10px
 		&:last-of-type
 			margin-right: 0
 		span
 			color: #000
+			font-family: inherit
 
 .tel
 	+flexBlockColumn
 	font-size: 1rem
 	align-items: flex-end
 	a
+		font-family: 'SF UI Display-heavy'
 		color: #000000
 		font-weight: bold
 	span
 		line-height: 1
 		color: #6b7481
+		font-weight: 600
 		+font-size(13px)
 
 .menu
@@ -84,7 +108,8 @@ header
 	width: 100%
 	text-align: center
 	&__item
-		padding: 13px 0
+		font-family: 'SF UI Display-bold'
+		padding: 12px 0
 		+font-size(12px)
 		color: #46505d
 		text-transform: uppercase
@@ -101,8 +126,8 @@ header
 		justify-content: center
 	.sandwich
 		float: right
-		padding: 10px
-		height: 46px
+		//padding-top: 13px
+		padding: 13px
 	.sandwich:after
 		width: 24px
 		height: 22px
@@ -115,7 +140,11 @@ header
 
 
 .hot-tour
-	color: $orange
+	color: #ff7a02
+	font-family: 'SF UI Display-bold'
+	text-transform: uppercase
+	+font-size(12px)
+	font-weight: 900
 	&:before
 		vertical-align: middle
 		margin-right: 5px
@@ -124,48 +153,70 @@ header
 		background: url("../img/svg/hot-tour.svg")
 		width: 13px
 		height: 19px
+	&:hover
+		color: #ff6331
+	&:hover.hot-tour:before
+		background: url("../img/svg/hot-hover.svg")
+
 .sandwich
 	display: inline-block
 	vertical-align: top
-	padding: 18px
+	padding: 0
 	cursor: pointer
 	text-align: center
-	height: 60px
-	width: 60px
+	height: 35px
+	//width: 24px
 	transition: opacity 0.6s
 	align-self: flex-end
-	&:after
-		content: ""
+	span
+		height: 3px
+		width: 24px
+		background-color: #00abf4
+		margin-bottom: 5px
 		display: block
-		clear: both
-		background: url(../img/svg/expand.svg)
-		width: 30px
-		height: 24px
-		background-size: cover
-		display: inline-block
-		vertical-align: middle
+		cursor: pointer
+	&:hover span
+		background-color: #00c4ff
+
 
 .fixed-adaptive-block .buttons .sandwich:after
 	content: ""
 	display: block
 	clear: both
 	background: url(../img/svg/menu-adapt.svg)
-	width: 120px
+	width: 60px
 	height: 60px
 	background-size: cover
 
 .fixed-adaptive-block .buttons .sandwich
 	padding: 0
 
-.fixed-adaptive-block .buttons .sandwich.open:after
+.sandwich.open:after
 	background: url(../img/svg/orange-close.svg)
-	width: 120px
-	height: 60px
+	width: 24px
+	height: 24px
 	background-size: cover
+	content: ""
+	display: inline-block
 
 .sandwich-menue.open
 	padding-top: 0
 	height: 100vh
+
+.header .level-1 .container .sandwich.open
+	display: inline-block
+	vertical-align: top
+	cursor: pointer
+	text-align: center
+	height: 40px
+	width: 50px
+	transition: opacity 0.6s
+	opacity: 1
+	padding-top: 11px
+	span
+		display: none
+
+
 
 .dropdown-list
 	list-style-type: disc
@@ -186,7 +237,7 @@ header
 
 .header .level-1 .dropdown-menu
 	z-index: 100
-	top: 45px
+	top: 43px
 
 .header .level-1 ul
 	padding-left: 15px
@@ -200,6 +251,15 @@ header
 .header .level-1 .container .sandwich.open
 	background: #00B0F2
 	opacity: 1
+	height: 43px
+
+.header .level-1
+	background-color: #edf1f6
+	position: relative
+	z-index: 50
+	border-bottom: none
+
+
 
 .sandwich.open:after
 	background: url(../img/svg/close-white.svg)
@@ -209,7 +269,17 @@ header
 	background-size: cover
 
 .header
-	padding-top: 71px
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.21)
+	padding-top: 0px
+	position: fixed
+	width: 100%
+	left: 0
+	top: 0
+	z-index: 200
 	.level-0
 		z-index: 150
 		padding: 14px
+.level-0
+	position: static
+.wrapper
+	padding-top: 114px
