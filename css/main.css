@@ -2687,4 +2687,6 @@ fieldset, label {
     left: inherit;
     right: 0; }
   .news__item {
-    width: 240px; } }
+    width: 240px; }
+  .section-comments {
+    height: 300px; } }
