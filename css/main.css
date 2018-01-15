@@ -1388,22 +1388,23 @@ header {
   .sandwich:hover span {
     background-color: #00c4ff; }
 
+.fixed-adaptive-block .buttons .sandwich {
+  width: 120px; }
+
 .fixed-adaptive-block .buttons .sandwich:after {
   content: "";
   display: block;
   clear: both;
   background: url(../img/svg/menu-adapt.svg);
-  width: 60px;
+  width: 120px;
   height: 60px;
   background-size: cover; }
 
 .fixed-adaptive-block .buttons .sandwich {
   padding: 0; }
 
-.sandwich.open:after {
+.fixed-adaptive-block .buttons .sandwich.open:after {
   background: url(../img/svg/orange-close.svg);
-  width: 24px;
-  height: 24px;
   background-size: cover;
   content: "";
   display: inline-block; }
@@ -1470,6 +1471,7 @@ header {
   width: 24px;
   height: 24px;
   content: "";
+  display: block;
   background-size: cover; }
 
 .header {
@@ -2305,7 +2307,7 @@ header {
 .news {
   text-align: center;
   width: 100%;
-  max-width: 1040px;
+  max-width: 1120px;
   margin: auto;
   padding: 0 30px; }
   .news__text-block {
@@ -2317,7 +2319,7 @@ header {
       transition: 0.3s; }
   .news__item {
     width: 297px;
-    margin: 15px 18px;
+    margin: 15px 23px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     display: inline-block;
     cursor: pointer;

@@ -178,23 +178,24 @@ header
 	&:hover span
 		background-color: #00c4ff
 
-
+.fixed-adaptive-block .buttons .sandwich
+	width: 120px
 .fixed-adaptive-block .buttons .sandwich:after
 	content: ""
 	display: block
 	clear: both
 	background: url(../img/svg/menu-adapt.svg)
-	width: 60px
+	width: 120px
 	height: 60px
 	background-size: cover
 
 .fixed-adaptive-block .buttons .sandwich
 	padding: 0
 
-.sandwich.open:after
+.fixed-adaptive-block .buttons .sandwich.open:after
 	background: url(../img/svg/orange-close.svg)
-	width: 24px
-	height: 24px
+	//width: 24px
+	//height: 24px
 	background-size: cover
 	content: ""
 	display: inline-block
@@ -266,6 +267,7 @@ header
 	width: 24px
 	height: 24px
 	content: ""
+	display: block
 	background-size: cover
 
 .header
