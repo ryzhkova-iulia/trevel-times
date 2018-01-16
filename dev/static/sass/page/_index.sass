@@ -133,9 +133,12 @@
 			justify-content: center
 			transition: 0.3s
 			img
-				position: relative
+				position: absolute
+				top: 16px
 				z-index: 10
 				width: 85px
+				left: 50%
+				transform: translateX(-50%)
 			&:before
 				content: ""
 				position: absolute
@@ -145,6 +148,9 @@
 				width: 96px
 				height: 39px
 				z-index: 1
+				left: 50%
+				transform: translateX(-50%)
+
 		&_second
 			position: relative
 			border-radius: 50%
@@ -163,6 +169,8 @@
 				width: 96px
 				height: 39px
 				z-index: 1
+				left: 50%
+				transform: translateX(-50%)
 		&_third
 			border-radius: 50%
 			+flexBlockColumn
@@ -195,6 +203,8 @@
 				width: 96px
 				height: 39px
 				z-index: 1
+				left: 50%
+				transform: translateX(-50%)
 		&:hover .travelling__img
 			transform: scale(1.06)
 			transition: 0.3s
@@ -220,7 +230,7 @@
 			top: 23px
 		&:hover .travelling__item_fourth
 			.block-rect
-				top: 33px
+				top: 34px
 				right: 34px
 
 	&__title
@@ -259,7 +269,7 @@
 	transition: 0.3s
 .money
 	left: 9px
-	top: 45px
+	top: 43px
 	width: 67px
 	height: 75px
 	z-index: 20
@@ -267,7 +277,7 @@
 .telephone
 	z-index: 30
 	transition: 0.3s
-	top: 30px
+	top: 28px
 	left: 35%
 
 
@@ -275,7 +285,7 @@
 	z-index: 40
 	right: 10px
 	transition: 0.3s
-	top: 50px
+	top: 48px
 
 .travelling__item:hover .money
 	transform: rotate(16deg)
@@ -289,17 +299,17 @@
 	transform: rotate(14deg)
 	transition: all 0.3s
 .block-rect
-	width: 50px
-	height: 50px
+	width: 49px
+	height: 49px
 	border-radius: 50%
 	overflow: hidden
 	position: absolute
-	top: 34px
-	right: 34px
+	top: 34.4px
+	right: 34.7px
 	z-index: 20
 .rect
-	width: 50px
-	height: 50px
+	width: 49px
+	height: 49px
 	border-radius: 50%
 	display: flex
 	flex-wrap: wrap
@@ -308,101 +318,101 @@
 		width: 25%
 		height: 25%
 		display: inline-block
-		transition: 0.3s
+		transition: 0.2s
 		position: absolute
 
 .rect-1
 	background-image: linear-gradient(to bottom, #00a540, #0ca282)
-	transition: 0.3s
+	transition: 0.2s
 	left: 0
 	top: 0
 
 .rect-2
 	background-image: linear-gradient(to bottom, #fffa0d, #ffcf27)
-	transition: 0.3s
+	transition: 0.2s
 	left: 25%
 	top: 0
 	z-index: 10
 
 .rect-3
 	background-image: linear-gradient(to bottom, #ffb40a, #ff8404)
-	transition: 0.3s
+	transition: 0.2s
 	left: 50%
 	top: 0
 .rect-4
 	background-image: linear-gradient(to bottom, #00a549, #0ca282)
-	transition: 0.3s
+	transition: 0.2s
 	left: 75%
 	top: 0
 
 .rect-5
 	background-image: linear-gradient(to bottom, #ffb80a, #ff8204)
-	transition: 0.3s
+	transition: 0.2s
 	top: 25%
 	left: 0
 
 .rect-6
 	background-image: linear-gradient(to bottom, #0bb1f5, #5ed9fa)
-	transition: 0.3s
+	transition: 0.2s
 	top: 25%
 	left: 25%
 	z-index: 5
 .rect-7
 	background-image: linear-gradient(to bottom, #fffa0d, #ffcf27)
-	transition: 0.3s
+	transition: 0.2s
 	top: 25%
 	left: 50%
 	z-index: 10
 .rect-8
 	background-image: linear-gradient(to bottom, #0bb1f5, #5ed9fa)
-	transition: 0.3s
+	transition: 0.2s
 	top: 25%
 	left: 75%
 	z-index: 5
 
 .rect-9
 	background-image: linear-gradient(to bottom, #ffb80a, #ffe704)
-	transition: 0.3s
+	transition: 0.2s
 	top: 50%
 	left: 0
 .rect-10
 	background-image: linear-gradient(to bottom, #02a55b, #1dd18e)
-	transition: 0.3s
+	transition: 0.2s
 	top: 50%
 	left: 25%
 	z-index: 10
 .rect-11
 	background-image: linear-gradient(to bottom, #ffb80a, #ff8204)
-	transition: 0.3s
+	transition: 0.2s
 	top: 50%
 	left: 50%
 	z-index: 5
 .rect-12
 	background-image: linear-gradient(to bottom, #ffb80a, #ffe704)
-	transition: 0.3s
+	transition: 0.2s
 	top: 50%
 	left: 75%
 
 .rect-13
 	background-image: linear-gradient(to bottom, #009235, #0ca282)
-	transition: 0.3s
+	transition: 0.2s
 	top: 75%
 	left: 0
 .rect-14
 	background-image: linear-gradient(to bottom, #ffb80a, #ff8204)
-	transition: 0.3s
+	transition: 0.2s
 	top: 75%
 	left: 25%
 	z-index: 5
 .rect-15
 	background-image: linear-gradient(to bottom, #02a55b, #1dd18e)
-	transition: 0.3s
+	transition: 0.2s
 	top: 75%
 	left: 50%
 	z-index: 10
 .rect-16
 	background-image: linear-gradient(to bottom, #18b8f6, #52d3f9)
-	transition: 0.3s
+	transition: 0.2s
 	top: 75%
 	left: 75%
 
@@ -510,7 +520,8 @@
 	border-radius: 25px
 	padding: 16px 58px
 	line-height: 1
-	font-family: 'SF UI Display-heavy'
+	font-family: 'SF UI Display-m'
+	font-weight: 900
 
 .item-hide
 	display: none
@@ -548,17 +559,30 @@
 .rest__item-travell
 	background-image: linear-gradient(to bottom, #00abf4, #46e2ff)
 .rest__item-exotic
-	background: #ffbe00 url("../img/svg/exotic.svg") no-repeat right bottom
-	&:hover
-		background: #ffbe00 url("../img/svg/exotic.svg") no-repeat right 150%
+	background: #ffbe00
+	position: relative
+	overflow: hidden
+	&:hover .exotic
+		transform: rotate(90deg)
+		transition: 0.3s
+	.rest__text
+		position: relative
+		z-index: 20
+
+.exotic
+	position: absolute
+	right: -145px
+	bottom: -145px
+	z-index: 10
+	transition: 0.3s
 
 .rest__item-group
 	background-image: linear-gradient(184deg, #ffa102, #ff9601 42%, #ff6902)
 
 .rest__item-mountain
 	background: #00abf4 url("../img/general/gory.png") no-repeat right bottom
-	&:hover
-		background: #00abf4 url("../img/general/gory.png") no-repeat right 150%
+	//&:hover
+	//	background: #00abf4 url("../img/general/gory.png") no-repeat right 150%
 .rest__item-beach
 	background-image: linear-gradient(184deg, #ffa102, #ff9601 42%, #ff6902)
 	position: relative
@@ -799,6 +823,8 @@
 		color: #343c47
 		text-align: left
 		height: 60px
+
+
 .arrow
 	position: absolute
 	bottom: 10px
@@ -806,6 +832,13 @@
 	width:  21px
 	height: 14px
 	display: inline-block
+	background: url("../img/svg/arrow.svg") no-repeat center
+	background-size: cover
+
+
+.news__item:hover .arrow
+	background: url("../img/svg/arrow-blue.svg") no-repeat center
+
 .js-news
 	.slick-prev:before
 		content: ""
@@ -843,7 +876,7 @@
 	.container
 		position: absolute
 		z-index: 100
-		top: -165px
+		top: -180px
 		margin: auto
 		left: 0
 		right: 0
