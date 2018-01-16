@@ -47,15 +47,20 @@ $(document).ready(function () {
     });
 
 
-    // var elem = $(".bg-top");
-    // var topPos = $(".bg-top").offset().top - $(".level-0").outerHeight();
-    //
-    // $(document).scroll(function() {
-    //     if($(document).scrollTop() > 50) {
-    //         elem.addClass('bg-top_animate');
-    //     } else if ($(document).scrollTop() <= 50){
-    //         elem.removeClass('bg-top_animate');
-    //     }
-    // });
+    var elem = $(".bg-top");
+    var topPos = $(".bg-top").offset().top - $(".level-0").outerHeight();
+
+    $(document).scroll(function() {
+        if($(document).scrollTop() > 10) {
+            elem.addClass('bg-top_animate');
+        } else if ($(document).scrollTop() <= 10){
+            elem.removeClass('bg-top_animate');
+        }
+    });
+
+    // paralax
+    $.stellar({
+        horizontalScrolling: true,
+    });
 
 });
