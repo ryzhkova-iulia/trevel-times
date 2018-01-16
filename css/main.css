@@ -1717,7 +1717,8 @@ header {
       transition: 0.3s; }
     .travelling__item:hover .travelling__item_first img {
       transform: scale(1.06);
-      transition: 0.3s; }
+      transition: 0.3s;
+      left: 23px; }
     .travelling__item:hover .travelling__item_third {
       transform: scale(1.06);
       transition: 0.3s; }
@@ -2609,6 +2610,7 @@ fieldset, label {
     color: #27c4ff;
     text-align: left;
     margin-bottom: 10px;
+    cursor: pointer;
     line-height: normal; }
   .map-list__item {
     cursor: pointer;
@@ -2618,6 +2620,8 @@ fieldset, label {
     line-height: 1.42;
     text-align: left;
     color: #7aa3b6; }
+    .map-list__item:hover {
+      color: #27c4ff; }
 
 .footer-main .container_flex {
   align-items: flex-start; }

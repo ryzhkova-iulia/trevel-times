@@ -53,7 +53,7 @@ $(document).ready(function () {
     $(document).scroll(function() {
         if($(document).scrollTop() > 10) {
             elem.addClass('bg-top_animate');
-        } else if ($(document).scrollTop() <= 10){
+        } else if ($(document).scrollTop() <= 500){
             elem.removeClass('bg-top_animate');
         }
     });
